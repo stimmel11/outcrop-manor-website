@@ -3,38 +3,37 @@ import Link from "next/link";
 export default function HomePage() {
   return (
     <>
-      {/* ── Hero ───────────────────────────────────────────────────────── */}
-      <section className="hero">
-        <div className="hero-copy">
-          <p className="eyebrow">Located in beautiful Byers Colorado</p>
-          <h1>Outcrop<br />Manor</h1>
-          <p className="hero-intro">
-            A whole-home retreat on 35.5 acres: 7 bedrooms, an event center,
-            an elevator, and views that make the city feel very far away. Thirty
-            minutes from Denver.
-          </p>
-          <div className="hero-actions">
-            <a
-              href="https://booking.outcrop-manor.com"
-              className="btn-primary"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Book a Retreat →
-            </a>
-            <Link href="/explore-the-manor" className="btn-secondary">
-              Explore the Manor
-            </Link>
-          </div>
-        </div>
-        <div className="hero-image">
-          <img
-            src="/images/hero-exterior.png"
-            alt="Outcrop Manor exterior at sunset, Byers Colorado"
-            style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: "inherit" }}
-          />
+      {/* ── Hero copy ──────────────────────────────────────────────────── */}
+      <section className="hero-text-block">
+        <p className="eyebrow">Located in beautiful Byers Colorado</p>
+        <h1>Outcrop<br />Manor</h1>
+        <p className="hero-intro">
+          A whole-home retreat on 35.5 acres: 7 bedrooms, an event center,
+          an elevator, and views that make the city feel very far away. Thirty
+          minutes from Denver.
+        </p>
+        <div className="hero-actions">
+          <a
+            href="https://booking.outcrop-manor.com"
+            className="btn-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Book a Retreat →
+          </a>
+          <Link href="/explore-the-manor" className="btn-secondary">
+            Explore the Manor
+          </Link>
         </div>
       </section>
+
+      {/* ── Full-width hero photo ───────────────────────────────────────── */}
+      <div className="hero-photo-full">
+        <img
+          src="/images/hero-exterior-wide.png"
+          alt="Outcrop Manor exterior at sunset, Byers Colorado"
+        />
+      </div>
 
       {/* ── 4-up explore cards ──────────────────────────────────────────── */}
       <section className="section" style={{ paddingTop: 0 }}>

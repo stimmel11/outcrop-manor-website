@@ -60,37 +60,35 @@ a { color: inherit; }
 .site-nav a.nav-cta:hover { background: var(--forest); color: var(--cream); }
 
 /* ── Hero ───────────────────────────────────────────────────────────── */
-.hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  min-height: 680px;
-  max-width: 1440px;
+.hero-text-block {
+  max-width: 900px;
   margin: 0 auto;
-  padding: 80px 5vw 96px;
-  gap: 6vw;
-  align-items: center;
+  padding: 88px 5vw 72px;
 }
-.hero-copy { position: relative; }
 .eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 0.16em; margin: 0 0 18px; text-transform: uppercase; color: var(--forest-soft); }
-.hero-copy h1 {
+.hero-text-block h1 {
   font-family: var(--font-display);
-  font-size: clamp(48px, 5.4vw, 80px);
+  font-size: clamp(64px, 9vw, 130px);
   font-weight: 400;
-  letter-spacing: -0.035em;
-  line-height: 0.98;
-  margin: 0 0 28px;
-  color: var(--sky);
+  letter-spacing: -0.04em;
+  line-height: 0.92;
+  margin: 0 0 32px;
+  color: var(--forest);
 }
-.hero-intro { font-size: 18px; line-height: 1.65; margin: 0 0 36px; max-width: 520px; color: var(--forest); }
+.hero-intro { font-size: 18px; line-height: 1.65; margin: 0 0 36px; max-width: 560px; color: var(--forest-soft); }
 .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
-.hero-image {
-  border-radius: 28px;
-  overflow: hidden;
-  aspect-ratio: 4/3;
-  background: var(--sage-pale);
-  position: relative;
+
+/* Full-bleed hero photo */
+.hero-photo-full {
+  width: 100%;
+  line-height: 0;
 }
-.hero-image img { width: 100%; height: 100%; object-fit: cover; }
+.hero-photo-full img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  max-height: 680px;
+}
 
 /* ── Buttons ─────────────────────────────────────────────────────────── */
 .btn-primary {
@@ -327,8 +325,6 @@ a { color: inherit; }
 
 /* ── Responsive ─────────────────────────────────────────────────────── */
 @media (max-width: 1080px) {
-  .hero { grid-template-columns: 1fr; min-height: auto; }
-  .hero-image { display: none; }
   .card-grid { grid-template-columns: repeat(2, 1fr); }
   .cta-band-inner { grid-template-columns: 1fr; }
   .why-inner { grid-template-columns: 1fr; }
