@@ -6,7 +6,7 @@ export default function HomePage() {
       {/* ── Hero copy ──────────────────────────────────────────────────── */}
       <section className="hero-text-block">
         <p className="eyebrow">Located in beautiful Byers Colorado</p>
-        <h1>Outcrop<br />Manor</h1>
+        <h1>Outcrop Manor</h1>
         <p className="hero-intro">
           A whole-home retreat on 35.5 acres: 7 bedrooms, an event center,
           an elevator, and views that make the city feel very far away. Thirty
