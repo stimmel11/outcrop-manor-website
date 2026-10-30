@@ -4,6 +4,8 @@ export interface BlogPost {
   date: string;
   author: string;
   excerpt: string;
+  image?: string; // path under /images/blog/
+  imageAlt?: string;
   content: string; // HTML string
 }
 
@@ -14,6 +16,8 @@ export const posts: BlogPost[] = [
     date: "October 29, 2026",
     author: "Melissa McGinness",
     excerpt: "New motion-activated sconces, patterned nonslip treads, and a few friendly reminders about safe stair habits at Outcrop Manor.",
+    image: "/images/blog/stairs-sconces.webp",
+    imageAlt: "Outcrop Manor staircase with new LED sconces and patterned nonslip treads",
     content: `
       <p>We've been busy making the staircases at Outcrop Manor safer and a little more beautiful. New motion-activated wall sconces are now installed, and patterned nonslip treads have been added to the Hitching Post staircase. More lighting improvements are on the way.</p>
       <p>A few friendly reminders for guests while the finishing touches are still coming together:</p>
@@ -38,6 +42,7 @@ export const posts: BlogPost[] = [
     date: "October 15, 2026",
     author: "Melissa McGinness",
     excerpt: "A quilting surprise is coming, stories behind the artwork, and Melissa asks the Outcrop community for input on what comes next.",
+    image: undefined, // TODO: add /images/blog/mystery-surprises-question-for-you.jpg
     content: `
       <p>There's a lot happening at Outcrop Manor, and I wanted to share some of it — plus ask for your input on a few things we're deciding right now.</p>
       <h3>A quilting surprise</h3>
@@ -61,6 +66,7 @@ export const posts: BlogPost[] = [
     date: "September 26, 2026",
     author: "Melissa McGinness",
     excerpt: "The elevator broke mid-weekend, a workbench collapsed, and a fire alarm went off at midnight. Also: Chris played 90 minutes of soccer during radiation. Life is both.",
+    image: undefined, // TODO: add /images/blog/sugar-spice-are-you-kidding-me.jpg
     content: `
       <p>I spent way too long trying to title this post. Something warm and welcoming didn't feel right. A list of everything going wrong didn't either. Because the truth is — life is both. It's the sugar and the spice and the moments where you look up and say, are you kidding me?</p>
       <p>So here's an honest version of a recent Outcrop weekend.</p>
@@ -84,6 +90,7 @@ export const posts: BlogPost[] = [
     date: "August 10, 2026",
     author: "Melissa McGinness",
     excerpt: "Bookings are nearly full, contractors are quoting wildly different prices, and there may or may not be a mouse problem. Also: Ninja coffee machines are in.",
+    image: undefined, // TODO: add /images/blog/falling-in-love-with-this-house.jpg
     content: `
       <p>I know that sounds dramatic. But I'm starting to think Outcrop Manor has been waiting for someone to love it — and we're that someone.</p>
       <h3>Where bookings stand</h3>
@@ -107,6 +114,7 @@ export const posts: BlogPost[] = [
     date: "July 20, 2026",
     author: "Melissa McGinness",
     excerpt: "Melissa planned a day off. Her inbox had other ideas. Then her kids showed up with flowers, and Chris brought barbecue.",
+    image: undefined, // TODO: add /images/blog/day-6-learning-to-slow-down.jpg
     content: `
       <p>Sunday was supposed to be a day off.</p>
       <p>I woke up and checked my messages — just quickly — and three hours later I was still in bed answering emails, confirming bookings, and sketching out plans for things that didn't exist yet. So. About that day off.</p>
@@ -127,6 +135,7 @@ export const posts: BlogPost[] = [
     date: "July 19, 2026",
     author: "Melissa McGinness",
     excerpt: "About 35 women toured an empty Outcrop Manor on sneak peek day. Most groups booked before they left.",
+    image: undefined, // TODO: add /images/blog/day-5-empty-house-filled-with-dreams.jpg
     content: `
       <p>Today about 35 women came through to see Outcrop Manor before the first official retreat. The house was empty — no beds, no furniture in the event center yet — and still, most groups booked before they walked out the door.</p>
       <p>That meant everything to me.</p>
@@ -148,6 +157,7 @@ export const posts: BlogPost[] = [
     date: "July 17, 2026",
     author: "Melissa McGinness",
     excerpt: "5am emails, ten new bookings, a garage door fix, a giant cucumber, and the search for seamless six-foot desks.",
+    image: undefined, // TODO: add /images/blog/day-4-dust-dreams-building.jpg
     content: `
       <p>Up at 5:00 a.m. answering emails from bed. This is my life now, and honestly? I don't hate it.</p>
       <p>Good news came fast today: Chris is feeling well after his procedure, and ten new retreat bookings came in overnight. That combination made it easier to tackle everything else.</p>
@@ -168,6 +178,7 @@ export const posts: BlogPost[] = [
     date: "July 16, 2026",
     author: "Melissa McGinness",
     excerpt: "Chris's procedure went smoothly, the inbox is overflowing with booking requests, and Melissa is building it for all of us.",
+    image: undefined, // TODO: add /images/blog/day-3-good-problems-to-have.jpg
     content: `
       <p>Chris's stent-removal procedure went smoothly. He's home resting — and already talking about going back to work on the house. That man does not slow down.</p>
       <h3>The inbox situation</h3>
@@ -187,6 +198,7 @@ export const posts: BlogPost[] = [
     date: "July 16, 2026",
     author: "Melissa McGinness",
     excerpt: "Five hours of cleaning, a flooded laundry room, remote-controlled ceiling fans, and a chandelier that made the whole thing worth it.",
+    image: undefined, // TODO: add /images/blog/day-2-the-main-floor.jpg
     content: `
       <p>Melissa, her daughter Athena, and family friend Dylan spent five hours on the main floor today. Bathrooms, countertops, windows, the refrigerator — all of it.</p>
       <h3>The surprises</h3>
@@ -208,6 +220,7 @@ export const posts: BlogPost[] = [
     date: "July 14, 2026",
     author: "Melissa McGinness",
     excerpt: "Construction started around 2006 but no one ever really lived here. Melissa and Athena cleaned the 1,600 sq ft event center by hand, and by the end of the day a quarter of the year was already booked.",
+    image: undefined, // TODO: add /images/blog/day-one-at-outcrop-manor.jpg
     content: `
       <p>I insisted on cleaning the house myself — with Athena — before handing anything off to a professional crew. I needed to understand its condition firsthand. To know what we were actually working with.</p>
       <p>The 1,600 to 1,700 square foot event center alone took hours to sweep and mop. It's a big, beautiful space.</p>
@@ -229,6 +242,7 @@ export const posts: BlogPost[] = [
     date: "July 14, 2026",
     author: "Melissa McGinness",
     excerpt: "How scrapbooking, a collapsed deal, a foreclosure, and a second chance led to Outcrop Manor.",
+    image: undefined, // TODO: add /images/blog/we-did-it-last-chapter.jpg
     content: `
       <p>This story is really about purpose.</p>
       <p>Scrapbooking led me here, but that's not the whole truth. The whole truth is that my family came first — always — and everything I've built has been shaped around that. My son's health challenges, and then Chris's diagnosis, changed how I thought about time. About what I wanted to create and why.</p>
@@ -248,6 +262,7 @@ export const posts: BlogPost[] = [
     date: "May 28, 2019",
     author: "Melissa McGinness",
     excerpt: "Each room at Outcrop Manor is being designed around one question: how does this make the retreat experience better?",
+    image: undefined, // TODO: add /images/blog/the-vision-one-thoughtful-space-at-a-time.jpg
     content: `
       <p>Every decision I'm making about this house starts with the same question: <em>How does this make the retreat experience better?</em></p>
       <p>That's it. That's the filter.</p>
@@ -269,6 +284,7 @@ export const posts: BlogPost[] = [
     date: "May 28, 2019",
     author: "Melissa McGinness",
     excerpt: "The story of how a birthday gift, a grandmother's teaching, and a hard drive lost in Australia led to the idea of Outcrop Manor.",
+    image: undefined, // TODO: add /images/blog/we-did-it.jpg
     content: `
       <p>We did it. After everything — and I mean everything — we bought Outcrop Manor.</p>
       <p>I want to tell you how we got here, because the short version doesn't do it justice.</p>
@@ -288,6 +304,7 @@ export const posts: BlogPost[] = [
     date: "May 28, 2019",
     author: "Melissa McGinness",
     excerpt: "Ranch Country Club, a woman named Rhonda, and the question that changed how Melissa thought about her scrapbooks.",
+    image: undefined, // TODO: add /images/blog/we-did-it-part-2.jpg
     content: `
       <p>After we moved back from Australia, I joined Ranch Country Club in Westminster. That's where I learned that scrapbooking clubs existed — that other people were doing what I'd been doing, together.</p>
       <p>I thought I'd invented this on my own. I had not.</p>
@@ -308,6 +325,7 @@ export const posts: BlogPost[] = [
     date: "May 28, 2019",
     author: "Melissa McGinness",
     excerpt: "A kitchen table in chaos, a weekend in Avon, a first retreat with four feet of table space, and strangers who became lifelong friends.",
+    image: undefined, // TODO: add /images/blog/we-did-it-part-3.jpg
     content: `
       <p>For a long time, I scrapbooked at my kitchen table. Organized chaos. Chris eventually suggested I get my own room — which was very diplomatic of him.</p>
       <p>He and I also had a habit of escaping to Avon for long weekends. I'd bring my supplies and set up at the dining table. It was good. But it wasn't the same as being with other people who were doing the same thing.</p>

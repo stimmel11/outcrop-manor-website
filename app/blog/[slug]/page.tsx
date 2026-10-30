@@ -53,9 +53,32 @@ export default async function BlogPostPage({
 
       <section className="prose-section">
         <div
-          className="prose-grid"
-          style={{ maxWidth: 720, margin: "0 auto" }}
+          style={{
+            maxWidth: 1100,
+            margin: "0 auto",
+            display: "grid",
+            gridTemplateColumns: post.image ? "1fr 1fr" : "1fr",
+            gap: "6vw",
+            alignItems: "start",
+          }}
         >
+          {/* Left column: image or nothing */}
+          {post.image ? (
+            <div style={{ position: "sticky", top: 100 }}>
+              <img
+                src={post.image}
+                alt={post.imageAlt ?? post.title}
+                style={{
+                  width: "100%",
+                  borderRadius: 20,
+                  display: "block",
+                  boxShadow: "var(--shadow)",
+                }}
+              />
+            </div>
+          ) : null}
+
+          {/* Right column (or full width): post body */}
           <div
             className="prose"
             dangerouslySetInnerHTML={{ __html: post.content }}
