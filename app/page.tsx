@@ -6,7 +6,7 @@ export default function HomePage() {
       {/* ── Hero ───────────────────────────────────────────────────────── */}
       <section className="hero">
         <div className="hero-copy">
-          <p className="eyebrow">Colorado Foothills · Byers, CO</p>
+          <p className="eyebrow">Located in beautiful Byers Colorado</p>
           <h1>Outcrop<br />Manor</h1>
           <p className="hero-intro">
             A whole-home retreat on 35.5 acres: 7 bedrooms, an event center,

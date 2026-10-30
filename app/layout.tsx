@@ -42,7 +42,7 @@ function SiteHeader() {
           <span className="brand-mark">O</span>
           <span>
             <strong>Outcrop Manor</strong>
-            <small>Colorado Foothills Retreat</small>
+            <small>Make time together matter</small>
           </span>
         </Link>
         <nav className="site-nav">
