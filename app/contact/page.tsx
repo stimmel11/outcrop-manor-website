@@ -150,11 +150,12 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <label htmlFor="phone">Phone (optional)</label>
+              <label htmlFor="phone">Phone *</label>
               <input
                 id="phone"
                 name="phone"
                 type="tel"
+                required
                 value={form.phone}
                 onChange={handleChange}
                 placeholder="(303) 555-0100"
@@ -204,7 +205,7 @@ export default function ContactPage() {
                   style={{ marginTop: 2, width: "auto" }}
                 />
                 <span style={{ color: "var(--forest-soft)" }}>
-                  Add me to the Inner Circle — I want early access to new retreat dates and Outcrop updates.
+                  Add me to the Inner Circle. I want early access to new retreat dates and Outcrop updates.
                 </span>
               </label>
 

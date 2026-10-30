@@ -3,7 +3,7 @@ import "./globals.css";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Outcrop Manor — Private Retreat in the Colorado Foothills",
+  title: "Outcrop Manor: Private Retreat in the Colorado Foothills",
   description:
     "Whole-home retreats on 35.5 acres in the Colorado foothills, 30 minutes from Denver. 7 bedrooms, 1,600 sq ft event center, elevator, stunning views.",
   metadataBase: new URL("https://outcrop-manor.com"),
@@ -91,7 +91,7 @@ function SiteFooter() {
             Book
           </a>
         </nav>
-        <p className="footer-copy">© 2025 Outcrop Manor · (720) 209-4800</p>
+        <p className="footer-copy">© 2025 Outcrop Manor</p>
       </div>
     </footer>
   );

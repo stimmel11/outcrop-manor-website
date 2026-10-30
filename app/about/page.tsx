@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "About | Outcrop Manor",
-  description: "The story of Outcrop Manor — built by Melissa and Chris to create the kind of retreat space they always wished existed.",
+  description: "The story of Outcrop Manor, built by Melissa and Chris to create the kind of retreat space they always wished existed.",
 };
 
 export default function AboutPage() {
@@ -11,7 +11,7 @@ export default function AboutPage() {
       <section className="page-hero">
         <h1>About Outcrop</h1>
         <p>
-          Built by Melissa and Chris — driven by a belief that the right
+          Built by Melissa and Chris, driven by a belief that the right
           space changes everything about what a group can do together.
         </p>
       </section>
@@ -22,7 +22,7 @@ export default function AboutPage() {
           <div className="prose">
             <h2>Driven to be creative</h2>
             <p>
-              Outcrop Manor started the way most good ideas do — with a problem.
+              Outcrop Manor started the way most good ideas do: with a problem.
               Melissa had spent years organizing retreats, team offsites, and
               gatherings of all kinds. She kept running into the same wall:
               finding a space that was truly private, fully equipped, accessible
@@ -44,13 +44,13 @@ export default function AboutPage() {
             <p>
               Melissa brings her background in retreat facilitation and hospitality
               to every detail of how Outcrop is designed and run. She&apos;s thought
-              carefully about what guests need — not just physically, but
-              experientially — and those decisions show up everywhere from the
+              carefully about what guests need, not just physically, but
+              experientially, and those decisions show up everywhere from the
               mattresses in the bedrooms to the layout of the event center.
             </p>
             <p>
               Chris brings the operational side. The building, the land, the
-              ongoing renovation work — he&apos;s invested in Outcrop as a place
+              ongoing renovation work. He&apos;s invested in Outcrop as a place
               that will get better over time, not just a property that&apos;s
               maintained.
             </p>
@@ -82,11 +82,11 @@ export default function AboutPage() {
               },
               {
                 title: "Accessibility is non-negotiable",
-                body: "Every guest should be able to participate fully in the retreat experience. The elevator, the first-floor suite, the accessible bathrooms — these weren't afterthoughts.",
+                body: "Every guest should be able to participate fully in the retreat experience. The elevator, the first-floor suite, the accessible bathrooms: these weren't afterthoughts.",
               },
               {
                 title: "Getting better",
-                body: "Outcrop is a work in progress — intentionally. The renovations are ongoing because we believe the space should keep improving as we learn what our guests need most.",
+                body: "Outcrop is a work in progress, intentionally. The renovations are ongoing because we believe the space should keep improving as we learn what our guests need most.",
               },
             ].map((v) => (
               <div

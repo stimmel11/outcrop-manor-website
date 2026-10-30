@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Explore the Manor | Outcrop Manor",
-  description: "35.5 acres, 7 bedrooms, a 1,600 sq ft event center, elevator, 4 porches, and big Colorado sky — everything in one whole-home retreat.",
+  description: "35.5 acres, 7 bedrooms, a 1,600 sq ft event center, elevator, 4 decks, and big Colorado sky - everything in one whole-home retreat.",
 };
 
 export default function ExploreTheManorPage() {
@@ -12,7 +12,7 @@ export default function ExploreTheManorPage() {
         <h1>Explore the Manor</h1>
         <p>
           35.5 acres of Colorado foothills. A fully equipped home with 7 bedrooms,
-          5.5 bathrooms, a residential elevator, and a 1,600 sq ft event center —
+          5.5 bathrooms, a residential elevator, and a 1,600 sq ft event center,
           all yours for the duration of your retreat.
         </p>
       </section>
@@ -34,7 +34,7 @@ export default function ExploreTheManorPage() {
             { num: "35.5", label: "Acres" },
             { num: "7", label: "Bedrooms" },
             { num: "5.5", label: "Bathrooms" },
-            { num: "4", label: "Porches" },
+            { num: "4", label: "Decks" },
             { num: "1,600", label: "Sq ft event center" },
           ].map((s) => (
             <div
@@ -72,14 +72,14 @@ export default function ExploreTheManorPage() {
             <p>
               Outcrop Manor is a 7-bedroom, 5.5-bathroom home designed from the
               ground up to host groups. It&apos;s not a converted barn or a repurposed
-              vacation rental — it was built to be a retreat, and every decision
+              vacation rental; it was built to be a retreat, and every decision
               reflects that intention.
             </p>
             <p>
-              Four porches give different vantage points on the property and the
+              Four decks give different vantage points on the property and the
               surrounding Colorado foothills. A residential elevator makes every
               floor accessible to every guest. The kitchen is equipped for real
-              cooking — caterers welcome.
+              cooking (caterers welcome).
             </p>
           </div>
           <div className="prose">
@@ -91,7 +91,7 @@ export default function ExploreTheManorPage() {
               ADA-considerate design throughout.
             </p>
             <p>
-              Getting here doesn&apos;t require mountain-pass driving — the property
+              Getting here doesn&apos;t require mountain-pass driving. The property
               is accessible off well-maintained roads near Byers, Colorado,
               approximately 30 minutes from Denver.
             </p>
@@ -115,7 +115,7 @@ export default function ExploreTheManorPage() {
             },
             {
               title: "Event Center",
-              body: "1,600 sq ft of flexible event space — workshops, yoga, ceremonies, presentations, or dining for large groups.",
+              body: "1,600 sq ft of flexible event space for workshops, yoga, ceremonies, presentations, or dining for large groups.",
             },
             {
               title: "Kitchen",
@@ -127,7 +127,7 @@ export default function ExploreTheManorPage() {
             },
             {
               title: "Outdoor Spaces",
-              body: "35.5 acres of Colorado foothills. Four porches, fire pits, trails, and wide open sky.",
+              body: "35.5 acres of Colorado foothills. Four decks, fire pits, trails, and wide open sky.",
             },
           ].map((f) => (
             <div key={f.title} className="feature-item">

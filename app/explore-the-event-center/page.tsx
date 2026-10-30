@@ -11,7 +11,7 @@ export default function ExploreEventCenterPage() {
       <section className="page-hero">
         <h1>The Event Center</h1>
         <p>
-          1,600 square feet of flexible, light-filled space — designed for
+          1,600 square feet of flexible, light-filled space, designed for
           whatever your group needs. Workshops, ceremonies, dinners, movement
           classes, or simply a place to gather.
         </p>
@@ -26,7 +26,7 @@ export default function ExploreEventCenterPage() {
               The Outcrop Manor event center was built to accommodate many
               kinds of gatherings. At 1,600 square feet, it has enough room for
               a fully seated dinner, a yoga class, a corporate presentation, or
-              a ceremony — and the open design means it can be reconfigured
+              a ceremony, and the open design means it can be reconfigured
               quickly between uses.
             </p>
             <p>
@@ -83,10 +83,10 @@ export default function ExploreEventCenterPage() {
           >
             {[
               { label: "Total area", value: "1,600 sq ft" },
-              { label: "Capacity — theater style", value: "~80 people" },
-              { label: "Capacity — dining style", value: "~50 people" },
+              { label: "Capacity: theater style", value: "~80 people" },
+              { label: "Capacity: dining style", value: "~50 people" },
               { label: "Natural light", value: "Large windows, east exposure" },
-              { label: "Connected to kitchen", value: "Yes — caterer accessible" },
+              { label: "Connected to kitchen", value: "Yes, caterer accessible" },
               { label: "AV & power", value: "Multiple circuits, projector-ready" },
             ].map((s) => (
               <div

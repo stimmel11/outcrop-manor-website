@@ -9,7 +9,7 @@ export default function HomePage() {
           <p className="eyebrow">Colorado Foothills · Byers, CO</p>
           <h1>Outcrop<br />Manor</h1>
           <p className="hero-intro">
-            A whole-home retreat on 35.5 acres — 7 bedrooms, an event center,
+            A whole-home retreat on 35.5 acres: 7 bedrooms, an event center,
             an elevator, and views that make the city feel very far away. Thirty
             minutes from Denver.
           </p>
@@ -28,7 +28,7 @@ export default function HomePage() {
           </div>
         </div>
         <div className="hero-image">
-          {/* Hero image placeholder — replace with actual photo */}
+          {/* Hero image placeholder - replace with actual photo */}
           <div
             style={{
               width: "100%",
@@ -56,13 +56,13 @@ export default function HomePage() {
             {
               href: "/explore-the-manor",
               label: "Explore the Manor",
-              desc: "35.5 acres, 7 bedrooms, an elevator, and 4 porches with sweeping views.",
+              desc: "35.5 acres, 7 bedrooms, an elevator, and 4 decks with sweeping views.",
               bg: "var(--sage-pale)",
             },
             {
               href: "/explore-the-rooms",
               label: "Explore the Rooms",
-              desc: "Eight sleeping spaces named for western spirit — from solo travelers to triple bunks.",
+              desc: "Eight sleeping spaces named for western spirit, from solo travelers to triple bunks.",
               bg: "var(--clay-pale)",
             },
             {
@@ -105,7 +105,7 @@ export default function HomePage() {
         <div className="place-copy">
           <h2>Just 30 minutes from Denver</h2>
           <p>
-            Outcrop Manor sits in the Colorado foothills near Byers — far enough
+            Outcrop Manor sits in the Colorado foothills near Byers, far enough
             to feel a world away, close enough for guests flying in from anywhere.
             No mountain-pass white-knuckle driving. Just open land, big sky, and
             exactly the space you need.
@@ -127,7 +127,7 @@ export default function HomePage() {
           <div>
             <h2>The Inner Circle</h2>
             <p>
-              Join our small list of people who hear about Outcrop first — before
+              Join our small list of people who hear about Outcrop first, before
               we open new retreat dates to the public.
             </p>
             <ul className="benefit-list">
@@ -150,7 +150,7 @@ export default function HomePage() {
               Outcrop Manor is a place built on the belief that the right
               environment changes everything. Whether you&apos;re gathering a
               team, hosting a wellness retreat, celebrating a milestone, or simply
-              need space to think — we want you to find exactly that here.
+              need space to think, we want you to find exactly that here.
             </p>
             <p style={{ color: "rgba(244,243,232,0.7)", fontSize: 15, lineHeight: 1.75, marginTop: 20 }}>
               The Inner Circle isn&apos;t a loyalty program. It&apos;s just our
@@ -173,7 +173,7 @@ export default function HomePage() {
               a space that&apos;s genuinely yours for the duration of your stay.
             </p>
             <p>
-              We built Outcrop to be flexible — the kind of place that works for
+              We built Outcrop to be flexible, the kind of place that works for
               a corporate offsite, a yoga retreat, a family reunion, or a wedding
               weekend. The 1,600 sq ft event center, the 8 sleeping spaces, the
               accessible design with an elevator, and the 35 acres of outdoor
@@ -217,7 +217,7 @@ export default function HomePage() {
             </h2>
             <p style={{ fontSize: 15, lineHeight: 1.7, color: "var(--forest-soft)", marginBottom: 24 }}>
               Outcrop Manor features a residential elevator, wide doorways, a
-              first-floor bedroom suite, and ADA-considerate design throughout —
+              first-floor bedroom suite, and ADA-considerate design throughout,
               so every guest can participate fully in the retreat experience.
             </p>
             <Link href="/explore-the-manor" className="btn-secondary">

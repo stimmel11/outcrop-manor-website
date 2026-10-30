@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Explore the Rooms | Outcrop Manor",
-  description: "Eight sleeping spaces named for western spirit — from solo travelers to triple-bunk rooms. Cooling memory foam mattresses throughout.",
+  description: "Eight sleeping spaces named for western spirit, from solo travelers to triple-bunk rooms. Cooling memory foam mattresses throughout.",
 };
 
 const rooms = [
@@ -22,7 +22,7 @@ const rooms = [
     count: 2,
     beds: "2 full beds",
     bg: "var(--sky-pale)",
-    desc: "Two double rooms — one east-facing, one west-facing — each with two beds. Great for pairs who want a bit more space without sharing a single bed.",
+    desc: "Two double rooms, one east-facing and one west-facing, each with two beds. Great for pairs who want a bit more space without sharing a single bed.",
   },
   {
     slug: "three-sheets-to-the-wind",
@@ -31,7 +31,7 @@ const rooms = [
     count: 3,
     beds: "3 twin beds",
     bg: "var(--sage-pale)",
-    desc: "Three triple-bed rooms for groups of three. Named with a wink — the west-facing windows will convince anyone that the sky is moving.",
+    desc: "Three triple-bed rooms for groups of three. Named with a wink: the west-facing windows will convince anyone that the sky is moving.",
   },
   {
     slug: "the-hitching-post",
@@ -158,7 +158,7 @@ export default function ExploreTheRoomsPage() {
           Ready to book the whole home?
         </h2>
         <p style={{ color: "var(--forest-soft)", marginBottom: 28 }}>
-          All rooms come with your whole-home booking — we don&apos;t sell rooms individually.
+          All rooms come with your whole-home booking. We don&apos;t sell rooms individually.
         </p>
         <a
           href="https://booking.outcrop-manor.com"

@@ -1,6 +1,6 @@
 export const metadata = {
   title: "Outdoor Spaces | Outcrop Manor",
-  description: "35.5 acres of Colorado foothills — trails, fire pits, stargazing, and open sky stretching to the horizon.",
+  description: "35.5 acres of Colorado foothills: trails, fire pits, stargazing, and open sky stretching to the horizon.",
 };
 
 export default function ExploreOutdoorSpacesPage() {
@@ -21,14 +21,14 @@ export default function ExploreOutdoorSpacesPage() {
             <p>
               One of the great privileges of Outcrop Manor is the land itself.
               35.5 acres means your group has room to wander, to find a quiet
-              corner, to spread out after a long day of sessions — without
+              corner, to spread out after a long day of sessions, without
               bumping into anyone else.
             </p>
             <p>
-              Four porches give different views of the property and the
+              Four decks give different views of the property and the
               surrounding landscape. Whether you want to watch the sunrise over
               the foothills or sit quietly with a coffee before the day begins,
-              there&apos;s a porch for that.
+              there&apos;s a deck for that.
             </p>
           </div>
           <div className="prose">
@@ -37,7 +37,7 @@ export default function ExploreOutdoorSpacesPage() {
               <li>Walking and hiking trails across the property</li>
               <li>Fire pits for evening gatherings</li>
               <li>Stargazing away from city light pollution</li>
-              <li>Four porches with Colorado foothills views</li>
+              <li>Four decks with Colorado foothills views</li>
               <li>Open meadow for outdoor activities</li>
               <li>Nature and wildlife (deer, raptors, and more)</li>
             </ul>
@@ -45,7 +45,7 @@ export default function ExploreOutdoorSpacesPage() {
         </div>
       </section>
 
-      {/* ── Four porches feature ──────────────────────────────────────── */}
+      {/* ── Four decks feature ──────────────────────────────────────── */}
       <section
         style={{
           background: "var(--forest)",
@@ -55,7 +55,7 @@ export default function ExploreOutdoorSpacesPage() {
       >
         <div style={{ maxWidth: 1440, margin: "0 auto" }}>
           <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.16em", textTransform: "uppercase", color: "var(--sky)", marginBottom: 14 }}>
-            Four porches
+            Four decks
           </p>
           <h2
             style={{
@@ -70,10 +70,10 @@ export default function ExploreOutdoorSpacesPage() {
             Every angle of the view
           </h2>
           <p style={{ fontSize: 16, lineHeight: 1.7, color: "rgba(244,243,232,0.78)", maxWidth: 660, marginBottom: 0 }}>
-            Outcrop Manor&apos;s four porches face different directions, so the
+            Outcrop Manor&apos;s four decks face different directions, so the
             view is different depending on the time of day and what you&apos;re
-            looking for. Morning coffee on the east porch. Afternoon quiet on the
-            north. Sunset from the west. Each one feels like its own room.
+            looking for. Morning coffee on the east deck. Afternoon quiet on the
+            north. Sunset from the west. Each one feels like its own space.
           </p>
         </div>
       </section>
