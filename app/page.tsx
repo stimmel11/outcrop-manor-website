@@ -28,22 +28,11 @@ export default function HomePage() {
           </div>
         </div>
         <div className="hero-image">
-          {/* Hero image placeholder - replace with actual photo */}
-          <div
-            style={{
-              width: "100%",
-              height: "100%",
-              background:
-                "linear-gradient(135deg, var(--sage-pale) 0%, var(--sky-pale) 100%)",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              color: "var(--forest-soft)",
-              fontSize: 14,
-            }}
-          >
-            Manor exterior photo
-          </div>
+          <img
+            src="/images/hero-exterior.png"
+            alt="Outcrop Manor exterior at sunset, Byers Colorado"
+            style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: "inherit" }}
+          />
         </div>
       </section>
 
@@ -234,7 +223,7 @@ export default function HomePage() {
           >
             {[
               "Residential elevator serving all floors",
-              "First-floor master bedroom suite",
+              "First-floor lounge room",
               "Wide hallways and accessible bathrooms",
               "No mountain-pass driving required",
               "Paved arrival and parking area",
