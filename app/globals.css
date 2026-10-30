@@ -1,19 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  --cream: #f4f3e8;
-  --paper: #fffef8;
-  --forest: #212e21;
-  --forest-soft: #3e5140;
-  --sky: #79b2e7;
-  --sky-pale: #dcebf7;
-  --clay: #dca17d;
-  --clay-pale: #f4dfd0;
-  --sage: #9dae96;
-  --sage-pale: #e3e8df;
-  --gold: #d5b55d;
-  --line: rgba(33, 46, 33, 0.16);
-  --shadow: 0 24px 60px rgba(33, 46, 33, 0.12);
+  /* Boho palette — warm, earthy, grounded */
+  --cream: #ede8df;        /* warm linen/sand */
+  --paper: #f5f1eb;        /* softer off-white */
+  --forest: #3b3d35;       /* dark olive-charcoal */
+  --forest-soft: #5c5e52;  /* mid warm gray-green */
+  --sky: #7a6355;          /* dusty mauve/terracotta brown — accent */
+  --sky-pale: #e8ddd4;     /* pale blush-tan */
+  --clay: #8b5e52;         /* rust / deep terracotta */
+  --clay-pale: #ecddd7;    /* blush clay */
+  --sage: #8a9490;         /* silvery sage */
+  --sage-pale: #dde3e0;    /* pale sage-gray */
+  --gold: #6b7566;         /* muted olive-sage */
+  --line: rgba(59, 61, 53, 0.14);
+  --shadow: 0 24px 60px rgba(59, 61, 53, 0.10);
   --font-body: Arial, Helvetica, sans-serif;
   --font-display: Georgia, "Times New Roman", serif;
 }
