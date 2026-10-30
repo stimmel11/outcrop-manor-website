@@ -50,6 +50,7 @@ function SiteHeader() {
           <Link href="/explore-the-rooms">Rooms</Link>
           <Link href="/explore-the-event-center">Events</Link>
           <Link href="/about">About</Link>
+          <Link href="/blog">Blog</Link>
           <Link href="/contact">Contact</Link>
           <a
             href="https://booking.outcrop-manor.com"
@@ -82,6 +83,7 @@ function SiteFooter() {
           <Link href="/explore-the-event-center">Event Center</Link>
           <Link href="/explore-outdoor-spaces">Outdoors</Link>
           <Link href="/about">About</Link>
+          <Link href="/blog">Blog</Link>
           <Link href="/contact">Contact</Link>
           <a
             href="https://booking.outcrop-manor.com"
