@@ -86,8 +86,7 @@ a { color: inherit; }
 .hero-photo-full img {
   width: 100%;
   display: block;
-  object-fit: cover;
-  max-height: 680px;
+  object-fit: contain;
 }
 
 /* ── Buttons ─────────────────────────────────────────────────────────── */
