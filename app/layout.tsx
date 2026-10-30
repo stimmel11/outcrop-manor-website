@@ -7,6 +7,10 @@ export const metadata: Metadata = {
   description:
     "Whole-home retreats on 35.5 acres in the Colorado foothills, 30 minutes from Denver. 7 bedrooms, 1,600 sq ft event center, elevator, stunning views.",
   metadataBase: new URL("https://outcrop-manor.com"),
+  icons: {
+    icon: "/favicon.png",
+    apple: "/favicon.png",
+  },
   openGraph: {
     title: "Outcrop Manor",
     description: "Private whole-home retreat in the Colorado foothills.",
@@ -39,7 +43,8 @@ function SiteHeader() {
     <header className="site-header">
       <div className="header-inner">
         <Link href="/" className="brand-lockup">
-          <span className="brand-mark">O</span>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/outcrop-logo.png" alt="Outcrop Manor logo" className="brand-logo" />
           <span>
             <strong>Outcrop Manor</strong>
             <small>Make time together matter</small>
@@ -71,7 +76,8 @@ function SiteFooter() {
     <footer style={{ borderTop: "1px solid var(--line)", padding: "44px 5vw" }}>
       <div className="site-footer">
         <div className="brand-lockup" style={{ textDecoration: "none" }}>
-          <span className="brand-mark" style={{ width: 34, height: 34, fontSize: 16 }}>O</span>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/outcrop-logo.png" alt="Outcrop Manor logo" className="brand-logo brand-logo--sm" />
           <span>
             <strong style={{ fontSize: 16 }}>Outcrop Manor</strong>
             <small>Byers, Colorado</small>

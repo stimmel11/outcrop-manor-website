@@ -5,25 +5,37 @@ export default function HomePage() {
     <>
       {/* ── Hero copy ──────────────────────────────────────────────────── */}
       <section className="hero-text-block">
-        <p className="eyebrow">Located in beautiful Byers Colorado</p>
-        <h1>Outcrop Manor</h1>
-        <p className="hero-intro">
-          A whole-home retreat on 35.5 acres: 7 bedrooms, an event center,
-          an elevator, and views that make the city feel very far away. Thirty
-          minutes from Denver.
-        </p>
-        <div className="hero-actions">
-          <a
-            href="https://booking.outcrop-manor.com"
-            className="btn-primary"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Book a Retreat →
-          </a>
-          <Link href="/explore-the-manor" className="btn-secondary">
-            Explore the Manor
-          </Link>
+        <div className="hero-text-inner">
+          {/* Logo */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/outcrop-logo.png"
+            alt="Outcrop Manor"
+            className="hero-logo"
+          />
+          {/* Copy */}
+          <div>
+            <p className="eyebrow">Located in beautiful Byers Colorado</p>
+            <h1>Outcrop Manor</h1>
+            <p className="hero-intro">
+              A whole-home retreat on 35.5 acres: 7 bedrooms, an event center,
+              an elevator, and views that make the city feel very far away. Thirty
+              minutes from Denver.
+            </p>
+            <div className="hero-actions">
+              <a
+                href="https://booking.outcrop-manor.com"
+                className="btn-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Book a Retreat →
+              </a>
+              <Link href="/explore-the-manor" className="btn-secondary">
+                Explore the Manor
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 
