@@ -5,37 +5,43 @@ export default function HomePage() {
     <>
       {/* ── Hero copy ──────────────────────────────────────────────────── */}
       <section className="hero-text-block">
-        <div className="hero-text-inner">
-          {/* Logo */}
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/images/outcrop-logo.png"
-            alt="Outcrop Manor"
-            className="hero-logo"
+        {/* Horseshoe background decoration */}
+        <svg className="hero-horseshoe" viewBox="0 0 400 440" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M200 20 C90 20 20 100 20 200 C20 310 90 390 160 390 L160 340 C110 340 70 290 70 200 C70 128 128 70 200 70 C272 70 330 128 330 200 C330 290 290 340 240 340 L240 390 C310 390 380 310 380 200 C380 100 310 20 200 20 Z"
+            fill="currentColor"
           />
-          {/* Copy */}
-          <div>
-            <p className="eyebrow">Located in beautiful Byers Colorado</p>
-            <h1>Outcrop Manor</h1>
-            <p className="hero-intro">
-              A whole-home retreat on 35.5 acres: 7 bedrooms, an event center,
-              an elevator, and views that make the city feel very far away. Thirty
-              minutes from Denver.
-            </p>
-            <div className="hero-actions">
-              <a
-                href="https://booking.outcrop-manor.com"
-                className="btn-primary"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Book a Retreat →
-              </a>
-              <Link href="/explore-the-manor" className="btn-secondary">
-                Explore the Manor
-              </Link>
-            </div>
-          </div>
+        </svg>
+
+        {/* Logo + location row */}
+        <div className="hero-toprow">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/outcrop-logo.png" alt="Outcrop Manor" className="hero-logo" />
+          <p className="eyebrow" style={{ margin: 0 }}>Located in Beautiful<br />Byers Colorado</p>
+        </div>
+
+        {/* Big tagline */}
+        <h1 className="hero-tagline">Your Outcrop<br />weekend<br />starts here.</h1>
+
+        {/* Subtext */}
+        <p className="hero-intro">
+          Gather, create, and reconnect at an Outcrop Hosted Event or during a Private weekend of your own.
+        </p>
+
+        {/* Pill tags */}
+        <div className="hero-pills">
+          <span className="hero-pill">Up to 16 guests</span>
+          <span className="hero-pill">Accessible by elevator</span>
+        </div>
+
+        {/* CTA buttons */}
+        <div className="hero-actions" style={{ marginTop: 32 }}>
+          <a href="https://booking.outcrop-manor.com" className="btn-primary" target="_blank" rel="noopener noreferrer">
+            Book a Retreat →
+          </a>
+          <Link href="/explore-the-manor" className="btn-secondary">
+            Explore the Manor
+          </Link>
         </div>
       </section>
 
