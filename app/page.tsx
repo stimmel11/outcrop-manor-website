@@ -48,7 +48,7 @@ export default function HomePage() {
       </div>
 
       {/* ── 4-up explore cards ──────────────────────────────────────────── */}
-      <section className="section" style={{ paddingTop: 0 }}>
+      <section className="section">
         <p className="section-kicker">What awaits</p>
         <h2 className="section-heading">Every corner of Outcrop</h2>
         <div className="card-grid">
