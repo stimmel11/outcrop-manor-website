@@ -118,6 +118,100 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* ── Inner Circle CTA ──────────────────────────────────────────── */}
+      <section className="section">
+        <div
+          style={{
+            background: "var(--forest)",
+            borderRadius: 28,
+            padding: "64px 5vw",
+            display: "grid",
+            gridTemplateColumns: "1fr 1fr",
+            gap: "6vw",
+            alignItems: "start",
+          }}
+        >
+          <div>
+            <p
+              style={{
+                fontSize: 11,
+                fontWeight: 700,
+                letterSpacing: "0.12em",
+                textTransform: "uppercase",
+                color: "rgba(244,243,232,0.5)",
+                marginBottom: 12,
+              }}
+            >
+              Stay in the loop
+            </p>
+            <h2
+              style={{
+                fontFamily: "var(--font-display)",
+                fontSize: "clamp(28px, 3vw, 44px)",
+                fontWeight: 400,
+                letterSpacing: "-0.03em",
+                color: "var(--cream)",
+                margin: "0 0 16px",
+              }}
+            >
+              The Inner Circle
+            </h2>
+            <p style={{ color: "rgba(244,243,232,0.7)", fontSize: 15, lineHeight: 1.75, marginBottom: 28 }}>
+              Join our small list of people who hear about Outcrop first — before
+              we open new retreat dates to the public.
+            </p>
+            <div style={{ display: "flex", flexDirection: "column", gap: 10, marginBottom: 36 }}>
+              {[
+                "Early access to new retreat dates",
+                "First notice of last-minute openings",
+                "Updates on ongoing renovations",
+                "A hand in shaping the Outcrop experience",
+                "Occasional surprises for loyal guests",
+              ].map((b) => (
+                <div key={b} style={{ display: "flex", gap: 10, alignItems: "flex-start", color: "rgba(244,243,232,0.85)", fontSize: 14 }}>
+                  <span style={{ color: "var(--gold)", flexShrink: 0, marginTop: 1 }}>✦</span>
+                  {b}
+                </div>
+              ))}
+            </div>
+            <Link href="/contact" className="btn-light">
+              Join the Inner Circle
+            </Link>
+          </div>
+          <div
+            style={{
+              background: "rgba(244,243,232,0.07)",
+              border: "1px solid rgba(244,243,232,0.12)",
+              borderRadius: 20,
+              padding: "36px 40px",
+            }}
+          >
+            <p
+              style={{
+                fontFamily: "var(--font-display)",
+                fontSize: 22,
+                fontWeight: 400,
+                color: "var(--cream)",
+                marginBottom: 20,
+                lineHeight: 1.3,
+              }}
+            >
+              &ldquo;The right environment changes everything.&rdquo;
+            </p>
+            <p style={{ color: "rgba(244,243,232,0.65)", fontSize: 14, lineHeight: 1.75, marginBottom: 16 }}>
+              Whether you&apos;re gathering a team, hosting a wellness retreat,
+              celebrating a milestone, or simply need space to think — we want
+              you to find exactly that here.
+            </p>
+            <p style={{ color: "rgba(244,243,232,0.65)", fontSize: 14, lineHeight: 1.75 }}>
+              The Inner Circle isn&apos;t a loyalty program. It&apos;s just our
+              way of keeping a small group of people in the loop as Outcrop
+              continues to grow.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* ── Inner circle invite ───────────────────────────────────────── */}
       <section className="section" style={{ textAlign: "center" }}>
         <h2 style={{ fontFamily: "var(--font-display)", fontSize: 36, fontWeight: 400, letterSpacing: "-0.03em", margin: "0 0 16px" }}>

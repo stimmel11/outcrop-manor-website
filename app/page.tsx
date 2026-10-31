@@ -135,46 +135,6 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* ── Inner Circle CTA ───────────────────────────────────────────── */}
-      <section className="cta-band">
-        <div className="cta-band-inner">
-          <div>
-            <h2>The Inner Circle</h2>
-            <p>
-              Join our small list of people who hear about Outcrop first, before
-              we open new retreat dates to the public.
-            </p>
-            <ul className="benefit-list">
-              {[
-                "Early access to new retreat dates",
-                "First notice of last-minute openings",
-                "Updates on ongoing renovations",
-                "A hand in shaping the Outcrop experience",
-                "Occasional surprises for loyal guests",
-              ].map((b) => (
-                <li key={b}>{b}</li>
-              ))}
-            </ul>
-            <Link href="/contact" className="btn-light">
-              Join the Inner Circle
-            </Link>
-          </div>
-          <div>
-            <p style={{ color: "rgba(244,243,232,0.7)", fontSize: 15, lineHeight: 1.75 }}>
-              Outcrop Manor is a place built on the belief that the right
-              environment changes everything. Whether you&apos;re gathering a
-              team, hosting a wellness retreat, celebrating a milestone, or simply
-              need space to think, we want you to find exactly that here.
-            </p>
-            <p style={{ color: "rgba(244,243,232,0.7)", fontSize: 15, lineHeight: 1.75, marginTop: 20 }}>
-              The Inner Circle isn&apos;t a loyalty program. It&apos;s just our
-              way of keeping a small group of people in the loop as Outcrop
-              continues to grow.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* ── Why Outcrop ───────────────────────────────────────────────── */}
       <section className="why-section">
         <div className="why-inner">
