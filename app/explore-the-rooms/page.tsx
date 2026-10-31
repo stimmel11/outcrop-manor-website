@@ -162,7 +162,7 @@ export default function ExploreTheRoomsPage() {
             margin: "0 0 16px",
           }}
         >
-          Ready to book the whole home?
+          Ready to book with Outcrop?
         </h2>
         <p style={{ color: "var(--forest-soft)", marginBottom: 28 }}>
           All rooms come with your whole-home booking. We don&apos;t sell rooms individually.
