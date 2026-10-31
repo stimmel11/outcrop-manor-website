@@ -60,9 +60,13 @@ export default function TheHitchingPostPage() {
               background: "var(--gold)",
               borderRadius: 22,
               minHeight: 380,
-              opacity: 0.5,
+              overflow: "hidden",
+              position: "relative",
             }}
-          />
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/images/rooms/hitching-post-workspace.webp" alt="The Hitching Post workspace" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block", position: "absolute", inset: 0 }} />
+          </div>
         </div>
       </section>
 
