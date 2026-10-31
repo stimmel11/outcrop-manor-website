@@ -107,7 +107,9 @@ export function SiteHeader() {
           </div>
 
           <Link href="/about">About</Link>
-          <Link href="/blog">Blog</Link>
+          <Link href="/blog" style={{ position: "relative" }}>
+            Outcrop Chronicles
+          </Link>
           <Link href="/contact">Contact</Link>
           <a
             href="https://booking.outcrop-manor.com"
