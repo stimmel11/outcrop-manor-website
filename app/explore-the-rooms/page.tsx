@@ -13,6 +13,7 @@ const rooms = [
     count: 3,
     beds: "1 queen bed",
     bg: "var(--clay-pale)",
+    img: "/images/rooms/one-woman-rodeo.webp",
     desc: "Three single-occupancy rooms, each with a queen bed. Perfect for solo attendees who need their own private space to decompress between sessions.",
   },
   {
@@ -22,6 +23,7 @@ const rooms = [
     count: 2,
     beds: "2 full beds",
     bg: "var(--sky-pale)",
+    img: "/images/rooms/double-shot-of-whiskey.webp",
     desc: "Two double rooms, one east-facing and one west-facing, each with two beds. Great for pairs who want a bit more space without sharing a single bed.",
   },
   {
@@ -31,6 +33,7 @@ const rooms = [
     count: 3,
     beds: "3 twin beds",
     bg: "var(--sage-pale)",
+    img: "/images/rooms/three-sheets-to-the-wind.webp",
     desc: "Three triple-bed rooms for groups of three. Named with a wink: the west-facing windows will convince anyone that the sky is moving.",
   },
   {
@@ -40,6 +43,7 @@ const rooms = [
     count: 1,
     beds: "1 king bed",
     bg: "var(--gold)",
+    img: "/images/rooms/the-hitching-post.webp",
     desc: "The first-floor master suite, accessible via elevator. A king bed, private bathroom, and easy access to the main living areas make this the go-to for guests with mobility needs or group leaders.",
   },
 ];
@@ -65,8 +69,11 @@ export default function ExploreTheRoomsPage() {
             <Link key={room.slug} href={`/${room.slug}`} className="room-card" style={{ textDecoration: "none", color: "inherit", display: "block" }}>
               <div
                 className="room-card-img"
-                style={{ background: room.bg }}
-              />
+                style={{ background: room.bg, overflow: "hidden", position: "relative" }}
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={room.img} alt={room.name} style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+              </div>
               <div className="room-card-body">
                 <span className="room-badge">{room.type} · {room.count} room{room.count > 1 ? "s" : ""}</span>
                 <h3>{room.name}</h3>
