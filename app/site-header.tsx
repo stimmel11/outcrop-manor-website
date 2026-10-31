@@ -3,6 +3,10 @@
 import Link from "next/link";
 import { useState, useRef } from "react";
 
+const chroniclesLinks = [
+  { href: "/outcrop-chronicles/the-house-that-wouldnt-let-them-leave", label: "The House That Wouldn't Let Them Leave", desc: "A Halloween legend — and maybe something more" },
+];
+
 const exploreLinks = [
   { href: "/explore-the-manor", label: "The Manor", desc: "35.5 acres, an elevator, and sweeping views" },
   { href: "/explore-the-rooms", label: "All Rooms", desc: "Overview of all 8 sleeping spaces" },
@@ -16,7 +20,9 @@ const exploreLinks = [
 
 export function SiteHeader() {
   const [exploreOpen, setExploreOpen] = useState(false);
+  const [chroniclesOpen, setChroniclesOpen] = useState(false);
   const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const chroniclesCloseTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   function openExplore() {
     if (closeTimer.current) clearTimeout(closeTimer.current);
@@ -25,6 +31,15 @@ export function SiteHeader() {
 
   function scheduleClose() {
     closeTimer.current = setTimeout(() => setExploreOpen(false), 120);
+  }
+
+  function openChronicles() {
+    if (chroniclesCloseTimer.current) clearTimeout(chroniclesCloseTimer.current);
+    setChroniclesOpen(true);
+  }
+
+  function scheduleChroniclesClose() {
+    chroniclesCloseTimer.current = setTimeout(() => setChroniclesOpen(false), 120);
   }
 
   return (
@@ -107,9 +122,68 @@ export function SiteHeader() {
           </div>
 
           <Link href="/about">About</Link>
-          <Link href="/blog" style={{ position: "relative" }}>
-            Outcrop Chronicles
-          </Link>
+          <Link href="/blog">Blog</Link>
+
+          {/* Outcrop Chronicles dropdown */}
+          <div
+            className="nav-dropdown-wrap"
+            onMouseEnter={openChronicles}
+            onMouseLeave={scheduleChroniclesClose}
+          >
+            <button
+              type="button"
+              className="nav-dropdown-trigger"
+              aria-expanded={chroniclesOpen}
+              onClick={() => setChroniclesOpen((v) => !v)}
+            >
+              Outcrop Chronicles
+              <svg
+                width="10"
+                height="6"
+                viewBox="0 0 10 6"
+                fill="none"
+                style={{
+                  marginLeft: 4,
+                  transform: chroniclesOpen ? "rotate(180deg)" : "none",
+                  transition: "transform 160ms",
+                }}
+              >
+                <path d="M1 1l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </button>
+
+            {chroniclesOpen && (
+              <div
+                className="nav-dropdown"
+                onMouseEnter={openChronicles}
+                onMouseLeave={scheduleChroniclesClose}
+              >
+                <div className="nav-dropdown-section">
+                  <p className="nav-dropdown-label">Stories</p>
+                  {chroniclesLinks.map((l) => (
+                    <Link
+                      key={l.href}
+                      href={l.href}
+                      className="nav-dropdown-item"
+                      onClick={() => setChroniclesOpen(false)}
+                    >
+                      <span className="nav-dropdown-item-name">{l.label}</span>
+                      <span className="nav-dropdown-item-desc">{l.desc}</span>
+                    </Link>
+                  ))}
+                  <Link
+                    href="/outcrop-chronicles"
+                    className="nav-dropdown-item"
+                    onClick={() => setChroniclesOpen(false)}
+                    style={{ marginTop: 4 }}
+                  >
+                    <span className="nav-dropdown-item-name" style={{ color: "var(--sky)" }}>All Chronicles →</span>
+                  </Link>
+                </div>
+              </div>
+            )}
+          </div>
+
           <Link href="/contact">Contact</Link>
           <a
             href="https://booking.outcrop-manor.com"
