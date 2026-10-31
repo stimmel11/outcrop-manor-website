@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Link from "next/link";
+import { SiteHeader } from "./site-header";
+// Link is used in SiteFooter below
 
 export const metadata: Metadata = {
   title: "Outcrop Manor: Private Retreat in the Colorado Foothills",
@@ -30,7 +32,7 @@ export default function RootLayout({
       <body>
         <div className="site-shell">
           <SiteHeader />
-          <main>{children}</main>
+          <main className="site-main">{children}</main>
           <SiteFooter />
         </div>
       </body>
@@ -38,38 +40,7 @@ export default function RootLayout({
   );
 }
 
-function SiteHeader() {
-  return (
-    <header className="site-header">
-      <div className="header-inner">
-        <Link href="/" className="brand-lockup">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/outcrop-logo.png" alt="Outcrop Manor logo" className="brand-logo" />
-          <span>
-            <strong>Outcrop Manor</strong>
-            <small>Make time together matter</small>
-          </span>
-        </Link>
-        <nav className="site-nav">
-          <Link href="/explore-the-manor">Explore</Link>
-          <Link href="/explore-the-rooms">Rooms</Link>
-          <Link href="/explore-the-event-center">Events</Link>
-          <Link href="/about">About</Link>
-          <Link href="/blog">Blog</Link>
-          <Link href="/contact">Contact</Link>
-          <a
-            href="https://booking.outcrop-manor.com"
-            className="nav-cta"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Book a Retreat
-          </a>
-        </nav>
-      </div>
-    </header>
-  );
-}
+// SiteHeader is now in site-header.tsx (client component for dropdown)
 
 function SiteFooter() {
   return (

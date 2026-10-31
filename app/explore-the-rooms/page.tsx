@@ -62,7 +62,7 @@ export default function ExploreTheRoomsPage() {
         <h2 className="section-heading">Named for the West</h2>
         <div className="room-grid">
           {rooms.map((room) => (
-            <div key={room.slug} className="room-card">
+            <Link key={room.slug} href={`/${room.slug}`} className="room-card" style={{ textDecoration: "none", color: "inherit", display: "block" }}>
               <div
                 className="room-card-img"
                 style={{ background: room.bg }}
@@ -73,7 +73,7 @@ export default function ExploreTheRoomsPage() {
                 <p style={{ color: "var(--forest-soft)", fontSize: 13, marginBottom: 8 }}>{room.beds}</p>
                 <p>{room.desc}</p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </section>

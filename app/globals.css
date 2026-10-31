@@ -60,6 +60,67 @@ a { color: inherit; }
 .site-nav a.nav-cta { border: 1px solid var(--forest); border-radius: 999px; padding: 11px 17px; }
 .site-nav a.nav-cta:hover { background: var(--forest); color: var(--cream); }
 
+/* ── Explore dropdown ───────────────────────────────────────────────── */
+.nav-dropdown-wrap { position: relative; }
+.nav-dropdown-trigger {
+  align-items: center;
+  background: none;
+  border: none;
+  color: var(--forest);
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  padding: 0;
+  text-transform: uppercase;
+}
+.nav-dropdown-trigger:hover { opacity: 0.7; }
+.nav-dropdown {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  box-shadow: 0 24px 60px rgba(59,61,53,0.14);
+  left: -16px;
+  padding: 20px;
+  position: absolute;
+  top: calc(100% + 12px);
+  width: 320px;
+  z-index: 200;
+}
+.nav-dropdown-section { padding: 4px 0; }
+.nav-dropdown-label {
+  color: var(--forest-soft);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  margin: 0 0 6px 10px;
+  text-transform: uppercase;
+}
+.nav-dropdown-item {
+  border-radius: 12px;
+  color: var(--forest);
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  transition: background 140ms;
+}
+.nav-dropdown-item:hover { background: var(--cream); }
+.nav-dropdown-item-name {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin-bottom: 2px;
+}
+.nav-dropdown-item-desc {
+  color: var(--forest-soft);
+  display: block;
+  font-size: 11px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.nav-dropdown-divider { border: none; border-top: 1px solid var(--line); margin: 10px 0; }
+
 /* ── Hero ───────────────────────────────────────────────────────────── */
 .hero-text-block {
   max-width: 1200px;
@@ -272,6 +333,7 @@ a { color: inherit; }
   margin: 0 0 18px;
 }
 .page-hero p { font-size: 18px; line-height: 1.6; max-width: 640px; margin: 0 auto; color: rgba(244,243,232,0.82); }
+.page-hero .eyebrow { color: rgba(244,243,232,0.55); margin-bottom: 12px; }
 
 /* ── Content prose ──────────────────────────────────────────────────── */
 .prose-section { max-width: 1440px; margin: 0 auto; padding: 80px 5vw; }
