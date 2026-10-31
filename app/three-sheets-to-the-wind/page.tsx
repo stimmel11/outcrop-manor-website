@@ -11,6 +11,7 @@ const rooms = [
     name: "Wide Open Spaces",
     tag: "Triple · 3 Twin Beds · Lower Level",
     color: "var(--sage-pale)",
+    img: "/images/rooms/wide-open-spaces.webp",
     desc: [
       "The calmer, more peaceful room — beside the event center on the lower level. Three twin beds (with plans to upgrade to full-size as the layout allows), a recently added ceiling fan, and a large bathroom next door.",
       "Bright days and quieter, warmer evenings. A great option for the group member who wants a bit more quiet.",
@@ -20,6 +21,7 @@ const rooms = [
     name: "Amarillo by Morning",
     tag: "Triple · 2 Full + 1 Twin · Main Level",
     color: "var(--clay-pale)",
+    img: "/images/rooms/amarillo-by-morning.webp",
     desc: [
       "Spacious and country-elegant on the main level. Two full-size beds and one twin, with windows facing both east for sunrise and northwest for sunset. Eagles nest in nearby trees and are sometimes visible from the room.",
       "A natural gathering point for the group — the kind of room that turns into a late-night conversation.",
@@ -29,6 +31,7 @@ const rooms = [
     name: "Friends in Low Places",
     tag: "Triple · 2 Full + 1 Twin · Upper Level",
     color: "var(--sky-pale)",
+    img: "/images/rooms/friends-in-low-places.webp",
     desc: [
       "One of the largest rooms in the house — beside the elevator on the upper level. Two full-size beds, one twin, several closets, a bathroom, and nooks. Northwest-facing windows behind the headboards offer sunset views across open Colorado land.",
       "This is the lively room. The adult sleepover room. The one where people are still laughing at 2am.",
@@ -71,9 +74,13 @@ export default function ThreeSheetsToTheWindPage() {
                 style={{
                   background: room.color,
                   minHeight: 260,
-                  opacity: 0.7,
+                  overflow: "hidden",
+                  position: "relative",
                 }}
-              />
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={room.img} alt={room.name} style={{ width: "100%", height: "100%", objectFit: "cover", display: "block", position: "absolute", inset: 0 }} />
+              </div>
               <div style={{ padding: "40px 44px" }}>
                 <span
                   style={{
