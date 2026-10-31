@@ -164,10 +164,7 @@ export default function ExploreTheRoomsPage() {
         >
           Ready to book with Outcrop?
         </h2>
-        <p style={{ color: "var(--forest-soft)", marginBottom: 28 }}>
-          All rooms come with your whole-home booking. We don&apos;t sell rooms individually.
-        </p>
-        <a
+<a
           href="https://booking.outcrop-manor.com"
           className="btn-primary"
           target="_blank"
