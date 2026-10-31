@@ -40,7 +40,7 @@ export default function ChroniclesPage() {
                 <div
                   style={{
                     width: 120,
-                    height: 90,
+                    height: 160,
                     borderRadius: 10,
                     overflow: "hidden",
                     flexShrink: 0,
@@ -52,7 +52,7 @@ export default function ChroniclesPage() {
                     <img
                       src={chronicle.image}
                       alt={chronicle.imageAlt ?? chronicle.title}
-                      style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                      style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }}
                     />
                   ) : (
                     <div
