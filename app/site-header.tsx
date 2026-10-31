@@ -122,9 +122,8 @@ export function SiteHeader() {
           </div>
 
           <Link href="/about">About</Link>
-          <Link href="/blog">Blog</Link>
 
-          {/* Outcrop Chronicles dropdown */}
+          {/* Blog dropdown with Outcrop Chronicles submenu */}
           <div
             className="nav-dropdown-wrap"
             onMouseEnter={openChronicles}
@@ -136,7 +135,7 @@ export function SiteHeader() {
               aria-expanded={chroniclesOpen}
               onClick={() => setChroniclesOpen((v) => !v)}
             >
-              Outcrop Chronicles
+              Blog
               <svg
                 width="10"
                 height="6"
@@ -159,7 +158,18 @@ export function SiteHeader() {
                 onMouseLeave={scheduleChroniclesClose}
               >
                 <div className="nav-dropdown-section">
-                  <p className="nav-dropdown-label">Stories</p>
+                  <Link
+                    href="/blog"
+                    className="nav-dropdown-item"
+                    onClick={() => setChroniclesOpen(false)}
+                  >
+                    <span className="nav-dropdown-item-name">Blog</span>
+                    <span className="nav-dropdown-item-desc">Updates from the manor</span>
+                  </Link>
+                </div>
+                <div className="nav-dropdown-divider" />
+                <div className="nav-dropdown-section">
+                  <p className="nav-dropdown-label">Outcrop Chronicles</p>
                   {chroniclesLinks.map((l) => (
                     <Link
                       key={l.href}
@@ -171,14 +181,6 @@ export function SiteHeader() {
                       <span className="nav-dropdown-item-desc">{l.desc}</span>
                     </Link>
                   ))}
-                  <Link
-                    href="/outcrop-chronicles"
-                    className="nav-dropdown-item"
-                    onClick={() => setChroniclesOpen(false)}
-                    style={{ marginTop: 4 }}
-                  >
-                    <span className="nav-dropdown-item-name" style={{ color: "var(--sky)" }}>All Chronicles →</span>
-                  </Link>
                 </div>
               </div>
             )}
