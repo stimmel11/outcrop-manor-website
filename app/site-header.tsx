@@ -169,26 +169,15 @@ export function SiteHeader() {
                 </div>
                 <div className="nav-dropdown-divider" />
                 <div className="nav-dropdown-section">
+                  <p className="nav-dropdown-label">Outcrop Chronicles</p>
                   <Link
                     href="/outcrop-chronicles"
+                    className="nav-dropdown-item"
                     onClick={() => setChroniclesOpen(false)}
-                    style={{ textDecoration: "none" }}
                   >
-                    <p className="nav-dropdown-label" style={{ cursor: "pointer" }}>
-                      Outcrop Chronicles ↗
-                    </p>
+                    <span className="nav-dropdown-item-name">Stories &amp; Legends</span>
+                    <span className="nav-dropdown-item-desc">Lore and legends from the land</span>
                   </Link>
-                  {chroniclesLinks.map((l) => (
-                    <Link
-                      key={l.href}
-                      href={l.href}
-                      className="nav-dropdown-item"
-                      onClick={() => setChroniclesOpen(false)}
-                    >
-                      <span className="nav-dropdown-item-name">{l.label}</span>
-                      <span className="nav-dropdown-item-desc">{l.desc}</span>
-                    </Link>
-                  ))}
                 </div>
               </div>
             )}
