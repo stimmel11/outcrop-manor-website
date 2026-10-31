@@ -57,32 +57,43 @@ export default function HomePage() {
               href: "/explore-the-manor",
               label: "Explore the Manor",
               desc: "35.5 acres, 7 bedrooms, an elevator, and 4 decks with sweeping views.",
+              img: "/images/home/explore-manor-dining.webp",
               bg: "var(--sage-pale)",
             },
             {
               href: "/explore-the-rooms",
               label: "Explore the Rooms",
               desc: "Eight sleeping spaces named for western spirit, from solo travelers to triple bunks.",
+              img: "/images/home/explore-rooms-beds.webp",
               bg: "var(--clay-pale)",
             },
             {
               href: "/explore-the-event-center",
               label: "The Event Center",
               desc: "1,600 sq ft of flexible gathering space for workshops, ceremonies, and celebrations.",
+              img: "/images/home/event-center-tables.webp",
               bg: "var(--sky-pale)",
             },
             {
               href: "/explore-outdoor-spaces",
               label: "Outdoor Spaces",
               desc: "Trails, stargazing, fire pits, and open sky stretching to the horizon.",
+              img: "/images/home/outdoor-sunset.webp",
               bg: "var(--cream)",
             },
           ].map((c) => (
             <Link key={c.href} href={c.href} className="card">
               <div
                 className="card-img"
-                style={{ background: c.bg }}
-              />
+                style={{ background: c.bg, overflow: "hidden", position: "relative" }}
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={c.img}
+                  alt={c.label}
+                  style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+                />
+              </div>
               <div className="card-body">
                 <strong>{c.label}</strong>
                 <p>{c.desc}</p>
@@ -96,12 +107,15 @@ export default function HomePage() {
       <div className="place-section">
         <div
           className="place-image"
-          style={{
-            background:
-              "linear-gradient(135deg, var(--forest) 0%, var(--forest-soft) 100%)",
-            minHeight: 400,
-          }}
-        />
+          style={{ overflow: "hidden", minHeight: 400, position: "relative" }}
+        >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/home/manor-exterior-promo.webp"
+            alt="Outcrop Manor luxury retreat"
+            style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+          />
+        </div>
         <div className="place-copy">
           <h2>Just 30 minutes from Denver</h2>
           <p>
