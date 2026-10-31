@@ -44,7 +44,7 @@ const rooms = [
     beds: "1 king bed",
     bg: "var(--gold)",
     img: "/images/rooms/the-hitching-post.webp",
-    desc: "The first-floor master suite, accessible via elevator. A king bed, private bathroom, and easy access to the main living areas make this the go-to for guests with mobility needs or group leaders.",
+    desc: "Our 1,600 sq. ft. Event Center is being designed with your retreat in mind. The vision is to create a bright, comfortable, highly functional space where guests can spread out, create, connect, and enjoy the experience without feeling crowded. The space will include 6-foot L-shaped adjustable tables, custom lighting, electric access at each station, a design wall for sewing and creative groups, a grid wall for selling or displaying items, and a wet bar for easy snacks, drinks, and gathering.",
   },
 ];
 
