@@ -169,13 +169,12 @@ export function SiteHeader() {
                 </div>
                 <div className="nav-dropdown-divider" />
                 <div className="nav-dropdown-section">
-                  <p className="nav-dropdown-label">Outcrop Chronicles</p>
                   <Link
                     href="/outcrop-chronicles"
                     className="nav-dropdown-item"
                     onClick={() => setChroniclesOpen(false)}
                   >
-                    <span className="nav-dropdown-item-name">Stories &amp; Legends</span>
+                    <span className="nav-dropdown-item-name">Outcrop Chronicles</span>
                     <span className="nav-dropdown-item-desc">Lore and legends from the land</span>
                   </Link>
                 </div>
