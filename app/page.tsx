@@ -107,13 +107,13 @@ export default function HomePage() {
       <div className="place-section">
         <div
           className="place-image"
-          style={{ overflow: "hidden", minHeight: 400, position: "relative" }}
+          style={{ background: "#2b3a2e", display: "flex", alignItems: "center", justifyContent: "center" }}
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/home/manor-exterior-promo.webp"
             alt="Outcrop Manor luxury retreat"
-            style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+            style={{ width: "100%", height: "100%", objectFit: "contain", display: "block" }}
           />
         </div>
         <div className="place-copy">
