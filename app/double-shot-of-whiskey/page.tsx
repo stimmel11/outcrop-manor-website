@@ -11,6 +11,7 @@ const rooms = [
     name: "Neon Moon",
     tag: "Double · 2 Full Beds · Main Level",
     color: "var(--sky-pale)",
+    img: "/images/rooms/neon-moon.webp",
     desc: [
       "The softer of the two rooms. Main-level location with two full-size beds and an east-facing window — morning sunlight and the promise of night sky views after dark.",
       "Two doors open onto the covered patio, making it easy to step outside for fresh air between sessions.",
@@ -20,6 +21,7 @@ const rooms = [
     name: "Tennessee Whiskey",
     tag: "Double · 2 Full Beds",
     color: "var(--clay-pale)",
+    img: "/images/rooms/tennessee-whiskey.webp",
     desc: [
       "Warmer and a little more adventurous in personality. Still coming together — décor and finishing touches being added to make it feel fully its own.",
       "Two full beds, the same thoughtful comfort as every Outcrop room: memory foam mattresses, quality bedding, dedicated charging and storage.",
@@ -58,9 +60,13 @@ export default function DoubleShotOfWhiskeyPage() {
                 style={{
                   background: room.color,
                   height: 220,
-                  opacity: 0.6,
+                  overflow: "hidden",
+                  position: "relative",
                 }}
-              />
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={room.img} alt={room.name} style={{ width: "100%", height: "100%", objectFit: "cover", display: "block", position: "absolute", inset: 0 }} />
+              </div>
               <div style={{ padding: "32px 36px 40px" }}>
                 <span
                   style={{
