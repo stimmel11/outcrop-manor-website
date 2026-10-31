@@ -89,7 +89,7 @@ export function SiteHeader() {
                 </div>
                 <div className="nav-dropdown-divider" />
                 <div className="nav-dropdown-section">
-                  <p className="nav-dropdown-label">Individual Rooms</p>
+                  <p className="nav-dropdown-label">Estate Rooms</p>
                   {exploreLinks.slice(4).map((l) => (
                     <Link
                       key={l.href}
