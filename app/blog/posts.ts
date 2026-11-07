@@ -121,8 +121,8 @@ export const posts: BlogPost[] = [
     date: "August 10, 2026",
     author: "Melissa McGinness",
     excerpt: "Bookings are nearly full, contractors are quoting wildly different prices, and there may or may not be a mouse problem. Also: Ninja coffee machines are in.",
-    image: "/images/blog/melissa-at-house.webp",
-    imageAlt: "Melissa smiling in front of Outcrop Manor during early renovation days",
+    image: "/images/blog/horses-fence.webp",
+    imageAlt: "Horses grazing at the fence near Outcrop Manor — the open land that makes the property magical",
     content: `
       <p>I know that sounds dramatic. But I'm starting to think Outcrop Manor has been waiting for someone to love it — and we're that someone.</p>
       <h3>Where bookings stand</h3>
@@ -191,7 +191,8 @@ export const posts: BlogPost[] = [
     date: "July 17, 2026",
     author: "Melissa McGinness",
     excerpt: "5am emails, ten new bookings, a garage door fix, a giant cucumber, and the search for seamless six-foot desks.",
-    image: undefined, // TODO: add /images/blog/day-4-dust-dreams-building.jpg
+    image: "/images/blog/man-at-beach.webp",
+    imageAlt: "A quiet moment on the water — the calm amid the chaos of building Outcrop Manor",
     content: `
       <p>Up at 5:00 a.m. answering emails from bed. This is my life now, and honestly? I don't hate it.</p>
       <p>Good news came fast today: Chris is feeling well after his procedure, and ten new retreat bookings came in overnight. That combination made it easier to tackle everything else.</p>
@@ -212,7 +213,8 @@ export const posts: BlogPost[] = [
     date: "July 16, 2026",
     author: "Melissa McGinness",
     excerpt: "Chris's procedure went smoothly, the inbox is overflowing with booking requests, and Melissa is building it for all of us.",
-    image: undefined, // TODO: add /images/blog/day-3-good-problems-to-have.jpg
+    image: "/images/blog/melissa-at-house.webp",
+    imageAlt: "Melissa smiling in front of Outcrop Manor during early renovation days",
     content: `
       <p>Chris's stent-removal procedure went smoothly. He's home resting — and already talking about going back to work on the house. That man does not slow down.</p>
       <h3>The inbox situation</h3>
@@ -255,8 +257,8 @@ export const posts: BlogPost[] = [
     date: "July 14, 2026",
     author: "Melissa McGinness",
     excerpt: "Construction started around 2006 but no one ever really lived here. Melissa and Athena cleaned the 1,600 sq ft event center by hand, and by the end of the day a quarter of the year was already booked.",
-    image: "/images/blog/horses-fence.webp",
-    imageAlt: "Two horses silhouetted against the open Colorado sky near Outcrop Manor",
+    image: "/images/blog/woman-orchids.webp",
+    imageAlt: "A woman arranging white orchids — the kind of intentional beauty waiting at Outcrop Manor",
     content: `
       <p>I insisted on cleaning the house myself — with Athena — before handing anything off to a professional crew. I needed to understand its condition firsthand. To know what we were actually working with.</p>
       <p>The 1,600 to 1,700 square foot event center alone took hours to sweep and mop. It's a big, beautiful space.</p>
@@ -299,8 +301,8 @@ export const posts: BlogPost[] = [
     date: "May 28, 2019",
     author: "Melissa McGinness",
     excerpt: "Each room at Outcrop Manor is being designed around one question: how does this make the retreat experience better?",
-    image: "/images/blog/woman-orchids.webp",
-    imageAlt: "A woman arranging white orchids — the kind of intentional, beautiful detail Outcrop Manor is built around",
+    image: "/images/blog/mood-board.webp",
+    imageAlt: "Interior design mood board showing the aesthetic vision for Outcrop Manor — warm, layered, and intentional",
     content: `
       <p>Every decision I'm making about this house starts with the same question: <em>How does this make the retreat experience better?</em></p>
       <p>That's it. That's the filter.</p>
@@ -322,8 +324,8 @@ export const posts: BlogPost[] = [
     date: "May 28, 2019",
     author: "Melissa McGinness",
     excerpt: "The story of how a birthday gift, a grandmother's teaching, and a hard drive lost in Australia led to the idea of Outcrop Manor.",
-    image: "/images/blog/man-at-beach.webp",
-    imageAlt: "A quiet moment of reflection — the calm before Outcrop Manor began",
+    image: "/images/blog/sketch-of-house.webp",
+    imageAlt: "Pencil sketch of Outcrop Manor surrounded by open plains — the house as it was first imagined",
     content: `
       <p>We did it. After everything — and I mean everything — we bought Outcrop Manor.</p>
       <p>I want to tell you how we got here, because the short version doesn't do it justice.</p>
@@ -343,7 +345,8 @@ export const posts: BlogPost[] = [
     date: "May 28, 2019",
     author: "Melissa McGinness",
     excerpt: "Ranch Country Club, a woman named Rhonda, and the question that changed how Melissa thought about her scrapbooks.",
-    image: undefined, // TODO: add /images/blog/we-did-it-part-2.jpg
+    image: "/images/blog/we-did-it-branded.webp",
+    imageAlt: "Outcrop Manor branded reveal — We Did It — the finished main floor ready for guests",
     content: `
       <p>After we moved back from Australia, I joined Ranch Country Club in Westminster. That's where I learned that scrapbooking clubs existed — that other people were doing what I'd been doing, together.</p>
       <p>I thought I'd invented this on my own. I had not.</p>
@@ -364,7 +367,8 @@ export const posts: BlogPost[] = [
     date: "May 28, 2019",
     author: "Melissa McGinness",
     excerpt: "A kitchen table in chaos, a weekend in Avon, a first retreat with four feet of table space, and strangers who became lifelong friends.",
-    image: undefined, // TODO: add /images/blog/we-did-it-part-3.jpg
+    image: "/images/blog/aerial-manor.webp",
+    imageAlt: "Aerial view of Outcrop Manor at golden hour — the finished property with lush landscaping and open Colorado sky",
     content: `
       <p>For a long time, I scrapbooked at my kitchen table. Organized chaos. Chris eventually suggested I get my own room — which was very diplomatic of him.</p>
       <p>He and I also had a habit of escaping to Avon for long weekends. I'd bring my supplies and set up at the dining table. It was good. But it wasn't the same as being with other people who were doing the same thing.</p>
