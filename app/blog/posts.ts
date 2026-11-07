@@ -71,8 +71,8 @@ export const posts: BlogPost[] = [
     date: "October 15, 2026",
     author: "Melissa McGinness",
     excerpt: "A quilting surprise is coming, stories behind the artwork, and Melissa asks the Outcrop community for input on what comes next.",
-    image: "/images/blog/virtual-open-house.webp",
-    imageAlt: "Cookies and table settings set out as an open invitation to the Outcrop community",
+    image: "/images/blog/quilting-surprise.webp",
+    imageAlt: "New shelving installed in Outcrop Manor as a surprise for quilting groups",
     content: `
       <p>There's a lot happening at Outcrop Manor, and I wanted to share some of it — plus ask for your input on a few things we're deciding right now.</p>
       <h3>A quilting surprise</h3>
@@ -96,7 +96,8 @@ export const posts: BlogPost[] = [
     date: "September 26, 2026",
     author: "Melissa McGinness",
     excerpt: "The elevator broke mid-weekend, a workbench collapsed, and a fire alarm went off at midnight. Also: Chris played 90 minutes of soccer during radiation. Life is both.",
-    image: undefined,
+    image: "/images/blog/coffee-spill.webp",
+    imageAlt: "Coffee dripped down the Outcrop Manor staircase — one of those weeks",
     content: `
       <p>I spent way too long trying to title this post. Something warm and welcoming didn't feel right. A list of everything going wrong didn't either. Because the truth is — life is both. It's the sugar and the spice and the moments where you look up and say, are you kidding me?</p>
       <p>So here's an honest version of a recent Outcrop weekend.</p>
@@ -120,7 +121,8 @@ export const posts: BlogPost[] = [
     date: "August 10, 2026",
     author: "Melissa McGinness",
     excerpt: "Bookings are nearly full, contractors are quoting wildly different prices, and there may or may not be a mouse problem. Also: Ninja coffee machines are in.",
-    image: undefined,
+    image: "/images/blog/man-at-beach.webp",
+    imageAlt: "A quiet moment — the kind of reset that Outcrop Manor is built for",
     content: `
       <p>I know that sounds dramatic. But I'm starting to think Outcrop Manor has been waiting for someone to love it — and we're that someone.</p>
       <h3>Where bookings stand</h3>
@@ -166,8 +168,8 @@ export const posts: BlogPost[] = [
     date: "July 19, 2026",
     author: "Melissa McGinness",
     excerpt: "About 35 women toured an empty Outcrop Manor on sneak peek day. Most groups booked before they left.",
-    image: "/images/blog/man-at-beach.webp",
-    imageAlt: "Guests arriving and experiencing Outcrop Manor for the first time",
+    image: "/images/blog/virtual-open-house.webp",
+    imageAlt: "Cookies and table settings for the Outcrop Manor sneak peek open house",
     content: `
       <p>Today about 35 women came through to see Outcrop Manor before the first official retreat. The house was empty — no beds, no furniture in the event center yet — and still, most groups booked before they walked out the door.</p>
       <p>That meant everything to me.</p>
@@ -254,7 +256,7 @@ export const posts: BlogPost[] = [
     author: "Melissa McGinness",
     excerpt: "Construction started around 2006 but no one ever really lived here. Melissa and Athena cleaned the 1,600 sq ft event center by hand, and by the end of the day a quarter of the year was already booked.",
     image: "/images/blog/horses-fence.webp",
-    imageAlt: "Two horses at the fence of a neighboring property near Outcrop Manor",
+    imageAlt: "Two horses silhouetted against the open Colorado sky near Outcrop Manor",
     content: `
       <p>I insisted on cleaning the house myself — with Athena — before handing anything off to a professional crew. I needed to understand its condition firsthand. To know what we were actually working with.</p>
       <p>The 1,600 to 1,700 square foot event center alone took hours to sweep and mop. It's a big, beautiful space.</p>
