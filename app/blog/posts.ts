@@ -121,8 +121,8 @@ export const posts: BlogPost[] = [
     date: "August 10, 2026",
     author: "Melissa McGinness",
     excerpt: "Bookings are nearly full, contractors are quoting wildly different prices, and there may or may not be a mouse problem. Also: Ninja coffee machines are in.",
-    image: "/images/blog/man-at-beach.webp",
-    imageAlt: "A quiet moment — the kind of reset that Outcrop Manor is built for",
+    image: "/images/blog/melissa-at-house.webp",
+    imageAlt: "Melissa smiling in front of Outcrop Manor during early renovation days",
     content: `
       <p>I know that sounds dramatic. But I'm starting to think Outcrop Manor has been waiting for someone to love it — and we're that someone.</p>
       <h3>Where bookings stand</h3>
@@ -299,7 +299,8 @@ export const posts: BlogPost[] = [
     date: "May 28, 2019",
     author: "Melissa McGinness",
     excerpt: "Each room at Outcrop Manor is being designed around one question: how does this make the retreat experience better?",
-    image: undefined, // TODO: add /images/blog/the-vision-one-thoughtful-space-at-a-time.jpg
+    image: "/images/blog/woman-orchids.webp",
+    imageAlt: "A woman arranging white orchids — the kind of intentional, beautiful detail Outcrop Manor is built around",
     content: `
       <p>Every decision I'm making about this house starts with the same question: <em>How does this make the retreat experience better?</em></p>
       <p>That's it. That's the filter.</p>
@@ -321,7 +322,8 @@ export const posts: BlogPost[] = [
     date: "May 28, 2019",
     author: "Melissa McGinness",
     excerpt: "The story of how a birthday gift, a grandmother's teaching, and a hard drive lost in Australia led to the idea of Outcrop Manor.",
-    image: undefined, // TODO: add /images/blog/we-did-it.jpg
+    image: "/images/blog/man-at-beach.webp",
+    imageAlt: "A quiet moment of reflection — the calm before Outcrop Manor began",
     content: `
       <p>We did it. After everything — and I mean everything — we bought Outcrop Manor.</p>
       <p>I want to tell you how we got here, because the short version doesn't do it justice.</p>
