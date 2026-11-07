@@ -24,11 +24,22 @@ export default function ContactPage() {
     setForm((f) => ({ ...f, [target.name]: value }));
   }
 
+  const [error, setError] = useState("");
+
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    // TODO: wire to an API route or Resend / Formspree
-    console.log("Contact form submitted:", form);
-    setSubmitted(true);
+    setError("");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (!res.ok) throw new Error("Send failed");
+      setSubmitted(true);
+    } catch {
+      setError("Something went wrong. Please try again or email us directly at admin@outcrop-manor.com.");
+    }
   }
 
   return (
@@ -209,6 +220,9 @@ export default function ContactPage() {
                 </span>
               </label>
 
+              {error && (
+                <p style={{ color: "#b04040", fontSize: 14, marginBottom: 12 }}>{error}</p>
+              )}
               <button type="submit" className="btn-primary" style={{ width: "100%", minHeight: 52 }}>
                 Send message
               </button>
