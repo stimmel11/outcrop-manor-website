@@ -21,6 +21,7 @@ const exploreLinks = [
 export function SiteHeader() {
   const [exploreOpen, setExploreOpen] = useState(false);
   const [chroniclesOpen, setChroniclesOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const chroniclesCloseTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -42,10 +43,21 @@ export function SiteHeader() {
     chroniclesCloseTimer.current = setTimeout(() => setChroniclesOpen(false), 120);
   }
 
+  // Close everything after a link is chosen (matters most for the mobile menu)
+  function closeAll() {
+    setMenuOpen(false);
+    setExploreOpen(false);
+    setChroniclesOpen(false);
+  }
+
+  // Hover should only open dropdowns for a real mouse. On touch, a tap fires
+  // "enter" and then "click", which would open and immediately re-close.
+  const isMouse = (e: React.PointerEvent) => e.pointerType === "mouse";
+
   return (
     <header className="site-header">
       <div className="header-inner">
-        <Link href="/" className="brand-lockup">
+        <Link href="/" className="brand-lockup" onClick={closeAll}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/images/outcrop-logo.png" alt="Outcrop Manor logo" className="brand-logo" />
           <span>
@@ -53,12 +65,28 @@ export function SiteHeader() {
             <small>Make time together matter</small>
           </span>
         </Link>
-        <nav className="site-nav">
+        <button
+          type="button"
+          className="nav-toggle"
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={menuOpen}
+          aria-controls="site-nav"
+          onClick={() => setMenuOpen((v) => !v)}
+        >
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+            {menuOpen ? (
+              <path d="M5 5l12 12M17 5L5 17" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+            ) : (
+              <path d="M3 6h16M3 11h16M3 16h16" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+            )}
+          </svg>
+        </button>
+        <nav id="site-nav" className={`site-nav${menuOpen ? " site-nav--open" : ""}`}>
           {/* Explore dropdown */}
           <div
             className="nav-dropdown-wrap"
-            onMouseEnter={openExplore}
-            onMouseLeave={scheduleClose}
+            onPointerEnter={(e) => isMouse(e) && openExplore()}
+            onPointerLeave={(e) => isMouse(e) && scheduleClose()}
           >
             <button
               type="button"
@@ -85,8 +113,8 @@ export function SiteHeader() {
             {exploreOpen && (
               <div
                 className="nav-dropdown"
-                onMouseEnter={openExplore}
-                onMouseLeave={scheduleClose}
+                onPointerEnter={(e) => isMouse(e) && openExplore()}
+                onPointerLeave={(e) => isMouse(e) && scheduleClose()}
               >
                 <div className="nav-dropdown-section">
                   <p className="nav-dropdown-label">The Property</p>
@@ -95,7 +123,7 @@ export function SiteHeader() {
                       key={l.href}
                       href={l.href}
                       className="nav-dropdown-item"
-                      onClick={() => setExploreOpen(false)}
+                      onClick={closeAll}
                     >
                       <span className="nav-dropdown-item-name">{l.label}</span>
                       <span className="nav-dropdown-item-desc">{l.desc}</span>
@@ -110,7 +138,7 @@ export function SiteHeader() {
                       key={l.href}
                       href={l.href}
                       className="nav-dropdown-item"
-                      onClick={() => setExploreOpen(false)}
+                      onClick={closeAll}
                     >
                       <span className="nav-dropdown-item-name">{l.label}</span>
                       <span className="nav-dropdown-item-desc">{l.desc}</span>
@@ -121,13 +149,13 @@ export function SiteHeader() {
             )}
           </div>
 
-          <Link href="/about">About</Link>
+          <Link href="/about" onClick={closeAll}>About</Link>
 
           {/* Blog dropdown with Outcrop Chronicles submenu */}
           <div
             className="nav-dropdown-wrap"
-            onMouseEnter={openChronicles}
-            onMouseLeave={scheduleChroniclesClose}
+            onPointerEnter={(e) => isMouse(e) && openChronicles()}
+            onPointerLeave={(e) => isMouse(e) && scheduleChroniclesClose()}
           >
             <button
               type="button"
@@ -154,14 +182,14 @@ export function SiteHeader() {
             {chroniclesOpen && (
               <div
                 className="nav-dropdown"
-                onMouseEnter={openChronicles}
-                onMouseLeave={scheduleChroniclesClose}
+                onPointerEnter={(e) => isMouse(e) && openChronicles()}
+                onPointerLeave={(e) => isMouse(e) && scheduleChroniclesClose()}
               >
                 <div className="nav-dropdown-section">
                   <Link
                     href="/blog"
                     className="nav-dropdown-item"
-                    onClick={() => setChroniclesOpen(false)}
+                    onClick={closeAll}
                   >
                     <span className="nav-dropdown-item-name">Blog</span>
                     <span className="nav-dropdown-item-desc">Updates from the manor</span>
@@ -172,7 +200,7 @@ export function SiteHeader() {
                   <Link
                     href="/outcrop-chronicles"
                     className="nav-dropdown-item"
-                    onClick={() => setChroniclesOpen(false)}
+                    onClick={closeAll}
                   >
                     <span className="nav-dropdown-item-name">Outcrop Chronicles</span>
                     <span className="nav-dropdown-item-desc">Lore and legends from the land</span>
@@ -182,7 +210,7 @@ export function SiteHeader() {
             )}
           </div>
 
-          <Link href="/contact">Contact</Link>
+          <Link href="/contact" onClick={closeAll}>Contact</Link>
           <a
             href="https://booking.outcrop-manor.com"
             className="nav-cta"

@@ -70,7 +70,7 @@ function SiteFooter() {
             Book
           </a>
         </nav>
-        <p className="footer-copy">© 2025 Outcrop Manor</p>
+        <p className="footer-copy">© 2026–2027 Outcrop Manor</p>
       </div>
     </footer>
   );
