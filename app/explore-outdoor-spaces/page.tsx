@@ -49,7 +49,7 @@ export default function ExploreOutdoorSpacesPage() {
       <section
         style={{
           background: "var(--forest)",
-          padding: "72px 5vw",
+          padding: "var(--section-y) 5vw",
           color: "var(--cream)",
         }}
       >

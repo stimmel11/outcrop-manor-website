@@ -53,7 +53,7 @@ export default async function BlogPostPage({
 
       <section className="prose-section">
         <div
-          style={{
+          className="m-stack" style={{
             maxWidth: 1100,
             margin: "0 auto",
             display: "grid",
@@ -92,7 +92,7 @@ export default async function BlogPostPage({
         style={{ borderTop: "1px solid var(--line)", paddingTop: 48 }}
       >
         <div
-          style={{
+          className="m-stack" style={{
             maxWidth: 720,
             margin: "0 auto",
             display: "grid",

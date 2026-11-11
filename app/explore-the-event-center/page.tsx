@@ -55,7 +55,7 @@ export default function ExploreEventCenterPage() {
         style={{
           background: "var(--forest)",
           color: "var(--cream)",
-          padding: "72px 5vw",
+          padding: "var(--section-y) 5vw",
         }}
       >
         <div style={{ maxWidth: 1440, margin: "0 auto" }}>
@@ -75,7 +75,7 @@ export default function ExploreEventCenterPage() {
             Space specifications
           </h2>
           <div
-            style={{
+            className="m-stack" style={{
               display: "grid",
               gridTemplateColumns: "repeat(3, 1fr)",
               gap: 20,

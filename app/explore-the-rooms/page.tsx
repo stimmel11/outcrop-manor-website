@@ -91,14 +91,14 @@ export default function ExploreTheRoomsPage() {
           background: "var(--paper)",
           borderTop: "1px solid var(--line)",
           borderBottom: "1px solid var(--line)",
-          padding: "72px 5vw",
+          padding: "var(--section-y) 5vw",
         }}
       >
         <div style={{ maxWidth: 1440, margin: "0 auto" }}>
           <p className="section-kicker">Every room</p>
           <h2 className="section-heading">Built for rest</h2>
           <div
-            style={{
+            className="m-2col" style={{
               display: "grid",
               gridTemplateColumns: "repeat(4, 1fr)",
               gap: 20,

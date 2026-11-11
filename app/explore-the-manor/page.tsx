@@ -20,7 +20,7 @@ export default function ExploreTheManorPage() {
       {/* ── Stats bar ──────────────────────────────────────────────────── */}
       <section className="section" style={{ paddingBottom: 0 }}>
         <div
-          style={{
+          className="m-2col" style={{
             display: "grid",
             gridTemplateColumns: "repeat(5, 1fr)",
             gap: 2,

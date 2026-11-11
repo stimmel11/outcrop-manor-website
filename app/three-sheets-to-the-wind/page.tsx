@@ -61,7 +61,7 @@ export default function ThreeSheetsToTheWindPage() {
           {rooms.map((room) => (
             <div
               key={room.name}
-              style={{
+              className="m-stack room-row" style={{
                 background: room.color,
                 border: "1px solid var(--line)",
                 borderRadius: 22,
@@ -131,11 +131,11 @@ export default function ThreeSheetsToTheWindPage() {
           background: "var(--paper)",
           borderTop: "1px solid var(--line)",
           borderBottom: "1px solid var(--line)",
-          padding: "72px 5vw",
+          padding: "var(--section-y) 5vw",
         }}
       >
         <div
-          style={{
+          className="m-stack" style={{
             maxWidth: 1440,
             margin: "0 auto",
             display: "grid",

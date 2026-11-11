@@ -164,18 +164,7 @@ export default function HomePage() {
 
       {/* ── Accessibility callout ──────────────────────────────────────── */}
       <section className="section">
-        <div
-          style={{
-            background: "var(--sky-pale)",
-            border: "1px solid var(--line)",
-            borderRadius: 24,
-            padding: "48px 48px",
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr",
-            gap: "4vw",
-            alignItems: "center",
-          }}
-        >
+        <div className="access-card">
           <div>
             <p className="section-kicker" style={{ marginBottom: 12 }}>Accessibility for All</p>
             <h2
@@ -198,14 +187,7 @@ export default function HomePage() {
               Learn about the manor
             </Link>
           </div>
-          <div
-            style={{
-              background: "var(--paper)",
-              borderRadius: 18,
-              padding: "32px",
-              border: "1px solid var(--line)",
-            }}
-          >
+          <div className="access-list">
             {[
               "Residential elevator serving all floors",
               "First-floor lounge room",

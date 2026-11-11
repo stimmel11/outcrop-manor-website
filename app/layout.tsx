@@ -44,7 +44,7 @@ export default function RootLayout({
 
 function SiteFooter() {
   return (
-    <footer style={{ borderTop: "1px solid var(--line)", padding: "44px 5vw" }}>
+    <footer style={{ borderTop: "1px solid var(--line)", padding: "32px 5vw" }}>
       <div className="site-footer">
         <div className="brand-lockup" style={{ textDecoration: "none" }}>
           {/* eslint-disable-next-line @next/next/no-img-element */}

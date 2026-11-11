@@ -68,13 +68,13 @@ export default function AboutPage() {
           background: "var(--paper)",
           borderTop: "1px solid var(--line)",
           borderBottom: "1px solid var(--line)",
-          padding: "72px 5vw",
+          padding: "var(--section-y) 5vw",
         }}
       >
         <div style={{ maxWidth: 1440, margin: "0 auto" }}>
           <p className="section-kicker">What we believe</p>
           <h2 className="section-heading">The Outcrop ethos</h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 24 }}>
+          <div className="m-stack" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 24 }}>
             {[
               {
                 title: "Privacy matters",
@@ -121,10 +121,10 @@ export default function AboutPage() {
       {/* ── Inner Circle CTA ──────────────────────────────────────────── */}
       <section className="section">
         <div
-          style={{
+          className="m-stack" style={{
             background: "var(--forest)",
             borderRadius: 28,
-            padding: "64px 5vw",
+            padding: "var(--section-y) 5vw",
             display: "grid",
             gridTemplateColumns: "1fr 1fr",
             gap: "6vw",

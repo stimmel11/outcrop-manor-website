@@ -57,7 +57,7 @@ export default function OneWomanRodeoPage() {
           {rooms.map((room) => (
             <div
               key={room.name}
-              style={{
+              className="m-stack room-row" style={{
                 background: room.color,
                 border: "1px solid var(--line)",
                 borderRadius: 22,
@@ -123,14 +123,14 @@ export default function OneWomanRodeoPage() {
           background: "var(--paper)",
           borderTop: "1px solid var(--line)",
           borderBottom: "1px solid var(--line)",
-          padding: "72px 5vw",
+          padding: "var(--section-y) 5vw",
         }}
       >
         <div style={{ maxWidth: 1440, margin: "0 auto" }}>
           <p className="section-kicker">Every room includes</p>
           <h2 className="section-heading">Comfortable by design</h2>
           <div
-            style={{
+            className="m-stack" style={{
               display: "grid",
               gridTemplateColumns: "repeat(3, 1fr)",
               gap: 20,
