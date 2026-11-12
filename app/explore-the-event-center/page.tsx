@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "The Event Center | Outcrop Manor",
-  description: "1,600 sq ft of flexible gathering space for workshops, yoga, ceremonies, dinners, and celebrations at Outcrop Manor.",
+  description: "1,600 sq ft of bright workshop space at Outcrop Manor with 16 crafting stations, tables, chairs, task lighting, and a full-size fridge.",
 };
 
 export default function ExploreEventCenterPage() {
@@ -11,9 +11,9 @@ export default function ExploreEventCenterPage() {
       <section className="page-hero">
         <h1>The Event Center</h1>
         <p>
-          1,600 square feet of flexible, light-filled space, designed for
-          whatever your group needs. Workshops, ceremonies, dinners, movement
-          classes, or simply a place to gather.
+          1,600 square feet of bright workshop space, set up and ready when
+          you arrive. Tables, chairs, task lighting, and a full-size fridge, so
+          your group can settle in and get to work.
         </p>
       </section>
 
@@ -21,18 +21,20 @@ export default function ExploreEventCenterPage() {
       <section className="section">
         <div className="prose-grid">
           <div className="prose">
-            <h2>Flexible by design</h2>
+            <h2>Built for workshops</h2>
             <p>
-              The Outcrop Manor event center was built to accommodate many
-              kinds of gatherings. At 1,600 square feet, it has enough room for
-              a fully seated dinner, a yoga class, a corporate presentation, or
-              a ceremony, and the open design means it can be reconfigured
-              quickly between uses.
+              The Outcrop Manor event center is set up as a working studio
+              with 16 crafting stations. Each one has its own L-shaped table
+              with room to spread out, a comfortable high-back chair made for
+              long sessions, a task lamp, and power right at the table.
+              There&apos;s nothing to haul in or set up. Bring your projects
+              and start.
             </p>
             <p>
-              Connected directly to the main home, it sits alongside the kitchen
-              so caterers can work efficiently. Large windows fill the space with
-              natural light and views of the Colorado foothills.
+              A full-size fridge in the room keeps drinks, snacks, and meals
+              close, so nobody has to break their momentum. Large windows bring
+              in natural light all day, and the event center connects directly
+              to the main home, with the kitchen right alongside.
             </p>
           </div>
           <div className="prose">
