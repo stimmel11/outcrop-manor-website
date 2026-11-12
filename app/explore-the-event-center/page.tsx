@@ -83,8 +83,8 @@ export default function ExploreEventCenterPage() {
           >
             {[
               { label: "Total area", value: "1,600 sq ft" },
-              { label: "Capacity: theater style", value: "~80 people" },
-              { label: "Capacity: dining style", value: "~50 people" },
+              { label: "Capacity: workshop style", value: "17 people" },
+              { label: "Capacity: dining style", value: "17 people" },
               { label: "Natural light", value: "Large windows, east exposure" },
               { label: "Connected to kitchen", value: "Yes, caterer accessible" },
               { label: "AV & power", value: "Multiple circuits, projector-ready" },
