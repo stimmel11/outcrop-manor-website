@@ -70,8 +70,8 @@ export default function ContactPage() {
           </div>
           <div className="contact-detail">
             <span style={{ fontSize: 18 }}>✉️</span>
-            <a href="mailto:melissarmcginness@gmail.com" style={{ textDecoration: "none" }}>
-              melissarmcginness@gmail.com
+            <a href="mailto:admin@outcrop-manor.com" style={{ textDecoration: "none" }}>
+              admin@outcrop-manor.com
             </a>
           </div>
           <div className="contact-detail">
