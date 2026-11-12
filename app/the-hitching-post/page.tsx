@@ -208,8 +208,8 @@ export default function TheHitchingPostPage() {
           </h2>
           <p style={{ fontSize: 15, lineHeight: 1.7, color: "var(--forest-soft)", marginBottom: 32 }}>
             We add to The Hitching Post based on what groups tell us. If there&apos;s something
-            specific your craft requires — or something that would make the experience much better
-            — we want to hear it.
+            specific your craft requires, or something that would make the experience much better,
+            we want to hear it.
           </p>
           <Link href="/contact" className="btn-primary">
             Send us a message →
