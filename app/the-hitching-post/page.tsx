@@ -31,7 +31,7 @@ export default function TheHitchingPostPage() {
           }}
         >
           <div>
-            <p className="section-kicker">The name</p>
+            <p className="section-kicker">The Hitching Post</p>
             <h2
               style={{
                 fontFamily: "var(--font-display)",
