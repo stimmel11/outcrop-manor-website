@@ -10,12 +10,11 @@ const chroniclesLinks = [
 const exploreLinks = [
   { href: "/explore-the-manor", label: "The Manor", desc: "35.5 acres, an elevator, and sweeping views" },
   { href: "/explore-the-rooms", label: "All Rooms", desc: "Overview of all 8 sleeping spaces" },
-  { href: "/explore-the-event-center", label: "Event Center", desc: "1,600 sq ft of flexible gathering space" },
+  { href: "/the-hitching-post", label: "The Hitching Post", desc: "The event center and crafting studio" },
   { href: "/explore-outdoor-spaces", label: "Outdoor Spaces", desc: "Porches, trails, and open Colorado sky" },
   { href: "/one-woman-rodeo", label: "One Woman Rodeo", desc: "3 single-occupancy rooms" },
   { href: "/double-shot-of-whiskey", label: "Double Shot of Whiskey", desc: "2 double rooms, east & west views" },
   { href: "/three-sheets-to-the-wind", label: "Three Sheets to the Wind", desc: "3 triple rooms, one per floor" },
-  { href: "/the-hitching-post", label: "The Hitching Post", desc: "The creative crafting studio" },
 ];
 
 export function SiteHeader() {

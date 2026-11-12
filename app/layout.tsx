@@ -57,7 +57,7 @@ function SiteFooter() {
         <nav className="footer-links">
           <Link href="/explore-the-manor">The Manor</Link>
           <Link href="/explore-the-rooms">Rooms</Link>
-          <Link href="/explore-the-event-center">Event Center</Link>
+          <Link href="/the-hitching-post">The Hitching Post</Link>
           <Link href="/explore-outdoor-spaces">Outdoors</Link>
           <Link href="/about">About</Link>
           <Link href="/blog">Blog</Link>

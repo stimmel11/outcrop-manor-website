@@ -114,8 +114,8 @@ export default function ExploreTheManorPage() {
               body: "5.5 bathrooms distributed across the home. First-floor full bathroom for accessible use.",
             },
             {
-              title: "Event Center",
-              body: "1,600 sq ft of flexible event space for workshops, yoga, ceremonies, presentations, or dining for large groups.",
+              title: "The Hitching Post",
+              body: "Our 1,600 sq ft event center, set up as a workshop studio with 16 crafting stations, tables, chairs, and a full-size fridge.",
             },
             {
               title: "Kitchen",

@@ -3,19 +3,20 @@ import Link from "next/link";
 export const metadata = {
   title: "The Hitching Post | Outcrop Manor",
   description:
-    "The crafting and creative studio at Outcrop Manor. 16 individual crafting stations, design walls, reclining chairs, and power at every table.",
+    "The Hitching Post is the 1,600 sq ft event center and crafting studio at Outcrop Manor: 16 crafting stations, design walls, a full-size fridge, and power at every table.",
 };
 
 export default function TheHitchingPostPage() {
   return (
     <>
       <section className="page-hero">
-        <p className="eyebrow">The Creative Studio</p>
+        <p className="eyebrow">The Event Center at Outcrop Manor</p>
         <h1>The Hitching Post</h1>
         <p>
-          This is the room we bought the house for. A crafting studio designed around
-          the idea that creative work is better when you&apos;re comfortable,
-          surrounded by people you like, and have everything you need within reach.
+          This is the room we bought the house for. 1,600 square feet of bright
+          workshop space, set up and ready when you arrive, with tables, chairs,
+          task lighting, and a full-size fridge so your group can settle in and
+          get to work.
         </p>
       </section>
 
@@ -45,7 +46,7 @@ export default function TheHitchingPostPage() {
             <p style={{ fontSize: 15, lineHeight: 1.7, color: "var(--forest-soft)", marginBottom: 16 }}>
               Picture this: a crafter looks up from her project at sunset. She sees a cowboy ride up to
               the hitching post. She gets distracted. That&apos;s the room. The kind of place where
-              time passes differently — where you look up and it&apos;s two hours later and you
+              time passes differently, where you look up and it&apos;s two hours later and you
               don&apos;t mind at all.
             </p>
             <p style={{ fontSize: 15, lineHeight: 1.7, color: "var(--forest-soft)" }}>
@@ -81,7 +82,14 @@ export default function TheHitchingPostPage() {
       >
         <div style={{ maxWidth: 1440, margin: "0 auto" }}>
           <p className="section-kicker">What&apos;s inside</p>
-          <h2 className="section-heading">Built for making things</h2>
+          <h2 className="section-heading" style={{ marginBottom: 16 }}>Built for making things</h2>
+          <p style={{ fontSize: 15, lineHeight: 1.7, color: "var(--forest-soft)", maxWidth: 760, margin: "0 0 32px" }}>
+            The Hitching Post is set up as a working studio. Each guest gets an L-shaped table
+            with room to spread out, a comfortable chair made for long sessions, a task lamp,
+            and power right at the table. There&apos;s nothing to haul in or set up. Bring your
+            projects and start. The studio connects directly to the main home, with the kitchen
+            right alongside.
+          </p>
           <div
             className="m-stack" style={{
               display: "grid",
@@ -103,16 +111,16 @@ export default function TheHitchingPostPage() {
                 body: "Large vertical design walls for sewing, quilting, and visual layouts. Grid walls for displaying or organizing finished work.",
               },
               {
+                title: "Full-Size Fridge",
+                body: "A full-size fridge in the room keeps drinks, snacks, and meals close, so nobody has to break their momentum.",
+              },
+              {
                 title: "Wet Bar",
                 body: "A wet bar for snacks, drinks, and gathering. Because good creative work runs on good snacks.",
               },
               {
                 title: "Warm Atmosphere",
-                body: "The feel is country and a little elegant — not a classroom, not a craft fair. A space that makes the work feel special.",
-              },
-              {
-                title: "Ongoing Updates",
-                body: "We keep adding features based on what groups tell us they need. Have a request? We want to hear it.",
+                body: "The feel is country and a little elegant. Not a classroom, not a craft fair. A space that makes the work feel special.",
               },
             ].map((f) => (
               <div
@@ -144,6 +152,66 @@ export default function TheHitchingPostPage() {
         </div>
       </section>
 
+      {/* ── Specs ─────────────────────────────────────────────────────── */}
+      <section
+        style={{
+          background: "var(--forest)",
+          color: "var(--cream)",
+          padding: "var(--section-y) 5vw",
+        }}
+      >
+        <div style={{ maxWidth: 1440, margin: "0 auto" }}>
+          <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.16em", textTransform: "uppercase", color: "var(--sky)", marginBottom: 14 }}>
+            Venue details
+          </p>
+          <h2
+            style={{
+              fontFamily: "var(--font-display)",
+              fontSize: "clamp(32px, 3.5vw, 54px)",
+              fontWeight: 400,
+              color: "var(--sky)",
+              letterSpacing: "-0.03em",
+              margin: "0 0 32px",
+            }}
+          >
+            Space specifications
+          </h2>
+          <div
+            className="m-stack" style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(3, 1fr)",
+              gap: 20,
+            }}
+          >
+            {[
+              { label: "Total area", value: "1,600 sq ft" },
+              { label: "Capacity: workshop style", value: "17 people" },
+              { label: "Capacity: dining style", value: "17 people" },
+              { label: "Natural light", value: "Large windows, east exposure" },
+              { label: "Connected to kitchen", value: "Yes, caterer accessible" },
+              { label: "AV & power", value: "Multiple circuits, projector-ready" },
+            ].map((s) => (
+              <div
+                key={s.label}
+                style={{
+                  background: "rgba(244,243,232,0.06)",
+                  border: "1px solid rgba(244,243,232,0.12)",
+                  borderRadius: 16,
+                  padding: 24,
+                }}
+              >
+                <div style={{ fontSize: 11, letterSpacing: "0.1em", textTransform: "uppercase", color: "rgba(244,243,232,0.55)", marginBottom: 8 }}>
+                  {s.label}
+                </div>
+                <div style={{ fontFamily: "var(--font-display)", fontSize: 22, fontWeight: 500 }}>
+                  {s.value}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── Who it's for ───────────────────────────────────────────────── */}
       <section className="section">
         <p className="section-kicker">Who comes here</p>
@@ -156,14 +224,18 @@ export default function TheHitchingPostPage() {
           }}
         >
           {[
-            "Quilting guilds",
+            "Quilting guild retreats",
+            "Scrapbooking retreats",
             "Sewing circles",
             "Fiber arts groups",
-            "Scrapbooking retreats",
             "Mixed-media artists",
-            "Creative business teams",
+            "Creative workshops and artistic residencies",
             "Crafting friends",
-            "Any group that works with their hands",
+            "Creative business teams",
+            "Wedding ceremonies and receptions",
+            "Family reunions and milestone celebrations",
+            "Nonprofit gatherings and board retreats",
+            "Speaker events and small conferences",
           ].map((g) => (
             <div
               key={g}
@@ -222,7 +294,6 @@ export default function TheHitchingPostPage() {
         <p className="section-kicker">Also at Outcrop</p>
         <h2 className="section-heading">See the full property</h2>
         <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
-          <Link href="/explore-the-event-center" className="btn-secondary">The Event Center →</Link>
           <Link href="/explore-the-rooms" className="btn-secondary">All Rooms →</Link>
           <Link href="/explore-outdoor-spaces" className="btn-secondary">Outdoor Spaces →</Link>
           <Link href="/explore-the-manor" className="btn-secondary">The Manor →</Link>
@@ -232,7 +303,7 @@ export default function TheHitchingPostPage() {
       {/* ── CTA ───────────────────────────────────────────────────────── */}
       <section className="cta-band" style={{ textAlign: "center" }}>
         <div className="cta-band-inner" style={{ display: "block", maxWidth: 680 }}>
-          <h2>Book the whole home — studio included</h2>
+          <h2>Book the whole home, studio included</h2>
           <p style={{ color: "rgba(244,243,232,0.7)", marginBottom: 32, fontSize: 15, lineHeight: 1.7 }}>
             The Hitching Post is part of every whole-home booking. Your group gets exclusive
             access to the studio for the full duration of your retreat.

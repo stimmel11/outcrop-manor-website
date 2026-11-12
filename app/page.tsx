@@ -68,9 +68,9 @@ export default function HomePage() {
               bg: "var(--clay-pale)",
             },
             {
-              href: "/explore-the-event-center",
-              label: "The Event Center",
-              desc: "1,600 sq ft of flexible gathering space for workshops, ceremonies, and celebrations.",
+              href: "/the-hitching-post",
+              label: "The Hitching Post",
+              desc: "Our 1,600 sq ft event center, set up as a workshop studio with 16 crafting stations.",
               img: "/images/home/event-center-tables.webp",
               bg: "var(--sky-pale)",
             },
