@@ -38,8 +38,8 @@ export default function ExploreEventCenterPage() {
           <div className="prose">
             <h2>Common uses</h2>
             <ul>
-              <li>Corporate offsites and team retreats</li>
-              <li>Wellness and yoga retreats</li>
+              <li>Scrapbooking retreats</li>
+              <li>Quilting guild retreats</li>
               <li>Wedding ceremonies and receptions</li>
               <li>Family reunions and milestone celebrations</li>
               <li>Creative workshops and artistic residencies</li>
