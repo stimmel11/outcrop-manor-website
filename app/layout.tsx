@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://outcrop-manor.com"),
   icons: {
     icon: "/favicon.png",
-    apple: "/favicon.png",
+    apple: "/apple-icon.png",
   },
   openGraph: {
     title: "Outcrop Manor",
