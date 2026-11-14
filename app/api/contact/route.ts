@@ -1,8 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
@@ -11,6 +9,15 @@ export async function POST(req: NextRequest) {
     if (!name || !email || !phone) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
     }
+
+    // Create the client per request, not at module load: a build (or a preview
+    // environment) without RESEND_API_KEY must not fail just by importing this file.
+    const apiKey = process.env.RESEND_API_KEY;
+    if (!apiKey) {
+      console.error("Contact form error: RESEND_API_KEY is not set");
+      return NextResponse.json({ error: "Email is not configured" }, { status: 500 });
+    }
+    const resend = new Resend(apiKey);
 
     const interestLabels: Record<string, string> = {
       booking: "Booking a retreat",
